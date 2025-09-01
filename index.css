@@ -206,7 +206,7 @@ flex-direction: column;
 
 .nav-img img{
 width:11vw;
-height:17vh
+height:17vh;
 object-fit: cover;
 }
 
