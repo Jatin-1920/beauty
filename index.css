@@ -176,12 +176,12 @@ a{
   top: 0;
   width: 100%;
  z-index:301;
- color:red;
+ color:black;
 }
 .menu{
 background:none;
 border: none;
-color:red;
+color:black;
 }
 
 
@@ -189,7 +189,7 @@ color:red;
     height: 0;
     inset: 0;
     width: 100vw;
-    background: white;
+    background: inherit;
     padding-inline:1rem ;
 position: fixed;
 z-index: 300;
@@ -293,7 +293,7 @@ bottom: 0;
 .top-section{
   height: 100vh;
   width: 100%;
-  background: black;
+  background: white;
 display: flex;
 justify-content: center;
 align-items: center;
