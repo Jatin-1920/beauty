@@ -19,8 +19,10 @@ function switchMenu() {
   state = !state
   if(state){
     navTl.play()
+navToggle.innerHTML = Close
   } else{
     navTl.reverse()
+navToggle.innerHTML = Menu
   }
 }
  
