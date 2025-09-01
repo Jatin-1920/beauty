@@ -19,7 +19,7 @@ ease:"expo.inOut"
 },0).to(".mask-body",{
 display:"block"
 },0).to(".mask-body",{
-opacity:.7,
+opacity:.85,
 duration:1.35,
 ease:"power1.inOut"
 },0)
