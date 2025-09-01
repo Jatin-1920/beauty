@@ -4,7 +4,7 @@
 
 
 gsap.registerPlugin(ScrollTrigger)
-
+document.addEventListener("DOMContentLoaded", () => {
 
 const motiveScroll = document.querySelector('.smoothScroll')
 const locoScroll = new LocomotiveScroll({
@@ -77,4 +77,5 @@ transformOrigin:"bottom"
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update()); 
 
 ScrollTrigger.refresh(); 
+})
 
