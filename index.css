@@ -176,11 +176,12 @@ a{
   top: 0;
   width: 100%;
  z-index:301;
- color: black;
+ color:red;
 }
 .menu{
 background:none;
 border: none;
+color:red;
 }
 
 
