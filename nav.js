@@ -25,6 +25,20 @@ function switchMenu() {
   if(state){
     navTl.play()
 navToggle.innerHTML = Close
+gsap.to(".nav-mask",{
+scaleY:0,
+ease:"power3.inOut",
+
+duration:.6,
+delay:.8,
+transformOrigin:"bottom"
+})
+gsap.from(".nav-img img",{
+scale:1.15,
+ease:"power3.inOut",
+delay:1.2,
+duration:.7,
+})
   } else{
     navTl.reverse()
 navToggle.innerHTML = Menu
