@@ -8,13 +8,13 @@ const navImage = document.querySelectorAll(".upperNav .nav2 h1")
 
 const navTl = gsap.timeline({paused:true})
 
-navTl.to(".navigation",{height:"100dvh",ease:"power3.inOut",
+navTl.to(".navigation",{height:"100dvh",ease:"expo.inOut",
                  duration:.85}).from(".dLine",{scaleY:0,transformOrigin:"0% 0%" ,duration:1,
               ease:"power2.inOut"},0.2).from(".hLine",{scaleX:0,transformOrigin:"0% 0%" ,duration:1,
             ease:"power1.inOut"},0.2).to(".smoothScroll",{
 y:"30vh",
 duration:1,
-ease:"power3.inOut"
+ease:"expo.inOut"
 
 },0)
 
