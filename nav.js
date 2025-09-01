@@ -29,18 +29,18 @@ function switchMenu() {
 gsap.to(".nav-img",{
 display:"flex",
 duration:0,
-delay:1,
+delay:1.2,
 })
 gsap.to(".nav-mask",{
 scaleX:0,
 transformOrigin:"left",
-delay:1.2,
+delay:1.4,
 duration:.6,
 ease:"power1.inOut"
 })
 gsap.from(".nav-img img",{
 scale:1.2,
-delay:1.4,
+delay:1.6,
 duration:.85,
 ease:"power1.inOut"
 })
