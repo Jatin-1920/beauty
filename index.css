@@ -190,7 +190,6 @@ color:black;
     inset: 0;
     width: 100vw;
     background:var(--bg-1);
-    padding-inline:1rem ;
 position: fixed;
 z-index: 300;
 overflow: clip;
@@ -236,6 +235,7 @@ text-align:center;
     position: relative;
     height: 60dvh;
 display: flex;
+margin-inline:1rem;
 
 }
 .leftNav{
