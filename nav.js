@@ -24,10 +24,27 @@ function switchMenu() {
   },1000)
   if(state){
     navTl.play()
-
+gsap.to(".nav-mask",{
+scaleX:0,
+transformOrigin:"left",
+delay:.8,
+duration:.6,
+ease:"power1.inOut"
+})
+gsap.from(".nav-img img",{
+scale:1.2,
+delay:.85,
+duration:1,
+ease:"power1.inOut"
+})
 
   } else{
-
+gsap.to(".nav-img",{
+scaleX:1,
+delay:1.2,
+duration:1,
+ease:"power1.inOut"
+})
     navTl.reverse()
 
   }
