@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger)
-
+document.addEventListener("DOMContentLoaded", () => {
 
 const navToggle = document.querySelector(".menu")
 
@@ -75,5 +75,5 @@ duration:1,
 }
 )
 navToggle.addEventListener("click",switchMenu)
-
+})
 
