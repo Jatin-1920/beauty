@@ -195,7 +195,19 @@ position: fixed;
 z-index: 300;
 overflow: clip;
 }
+.nav-img{
+width:3rem;
+height:3rem;
+position:relative;
+overflow:clip;
+}
 
+.nav-img img{
+width:100%;
+height:100%;
+object-fit: cover;
+position: absolute;
+}
 
 .nav-title {
   position: relative;
@@ -265,6 +277,9 @@ display: flex;
 }
 .nav3{
     padding: 1rem;
+display:flex;
+justify-content: center;
+align-items:center;
 }
 .upperNav{
     position: relative;
