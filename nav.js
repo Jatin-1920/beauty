@@ -3,8 +3,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 const navToggle = document.querySelector(".menu")
 
-const navImage = document.querySelectorAll(".nav-img img")
-const navImg = document.querySelector(".nav-img")
+const navImage = document.querySelectorAll(".upperNav .nav2 h1")
+
 
 const navTl = gsap.timeline({paused:true})
 
@@ -53,7 +53,7 @@ ease:"power1.inOut"
 }
  
 navImage.forEach((e)=>{
-e.addEventListener("mousover",(i)=>{
+e.addEventListener("mouseover",(i)=>{
 let slideTxt = e.target.dataset.slide
 let sldTxt = parseInt(slideTxt)
 gsap.to(".nav-img img",{
