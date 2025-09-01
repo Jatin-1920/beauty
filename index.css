@@ -300,13 +300,13 @@ overflow:clip;
   height: 100%;
   overflow: clip;
   position: absolute;
-    transition:all .7s ease-in-out;
+    transition:all .5s ease-in-out;
 }
 .img img{
-  transition:all .7s ease-in-out;
+  transition:all .5s ease-in-out;
 }
 .img img:hover{
-  scale:1.2;
+  scale:1.1;
 
 }
 .mask-img{
