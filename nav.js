@@ -3,6 +3,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 const navToggle = document.querySelector(".menu")
 
+const navImage = document.querySelectorAll(".nav-img img")
+const navImg = document.querySelector(".nav-img")
 
 const navTl = gsap.timeline({paused:true})
 
@@ -51,3 +53,5 @@ ease:"power1.inOut"
 }
  
 navToggle.addEventListener("click",switchMenu)
+
+
