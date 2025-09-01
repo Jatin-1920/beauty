@@ -60,7 +60,7 @@ rotationX:0
 )
 
  gsap.to(".mask-img",{
-y:"100%",
+scaleY:0,
 ease:"power3.inOut",
 duration:.7,
 }
