@@ -17,6 +17,11 @@ let state = false;
 
 function switchMenu() {
   state = !state
+  navToggle.disabled = true;
+    setTimeout(()=>{
+      navToggle.disabled = false;
+    navToggle.innerHTML = state ? "Close":"Menu"
+  },1000)
   if(state){
     navTl.play()
 navToggle.innerHTML = Close
