@@ -200,8 +200,9 @@ width:11vw;
 height:17vh;
 position:relative;
 overflow:clip;
-display:flex;
+display:none;
 flex-direction: column;
+
 }
 
 .nav-img img{
