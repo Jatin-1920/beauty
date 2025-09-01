@@ -54,7 +54,7 @@ ease:"power1.inOut"
  
 navImage.forEach((e)=>{
 e.addEventListener("mouseover",(i)=>{
-let slideTxt = e.target.dataset.slide
+let slideTxt = e.dataset.slide
 let sldTxt = parseInt(slideTxt)
 gsap.to(".nav-img img",{
 y:`${sldTxt}%`,
