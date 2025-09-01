@@ -71,7 +71,9 @@ transformOrigin:"bottom"
 )
 
 const navToggle = document.querySelector(".menu")
-
+gsap.set(".navigation",{
+height:"0"
+})
 
 const navTl = gsap.timeline({paused:true})
 
