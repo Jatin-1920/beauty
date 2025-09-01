@@ -175,7 +175,7 @@ a{
   position: fixed;
   top: 0;
   width: 100%;
- z-index: 301;
+ 
  color: white;
 }
 
@@ -189,11 +189,15 @@ position: fixed;
 z-index: 300;
 overflow: clip;
 }
+.menu{
+z-index:301;
+}
 
 .nav-title {
   position: relative;
   padding-block: 1.5rem;
   display: flex;
+text-align:center;
 
 }
 .nav-title div,.nav-title p{
