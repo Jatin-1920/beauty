@@ -188,7 +188,7 @@ border: none;
     height: 0;
     inset: 0;
     width: 100vw;
-    background-color: grey;
+    background: white;
     padding-inline:1rem ;
 position: fixed;
 z-index: 300;
