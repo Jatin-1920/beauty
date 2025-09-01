@@ -24,4 +24,4 @@ function switchMenu() {
   }
 }
  
-navToggle.addEventListener("click",switchMenu())
+navToggle.addEventListener("click",switchMenu)
