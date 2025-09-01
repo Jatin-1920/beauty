@@ -39,7 +39,7 @@ ease:"power1.inOut"
 })
 
   } else{
-gsap.to(".nav-img",{
+gsap.to(".nav-mask",{
 scaleX:1,
 delay:1.2,
 duration:1,
