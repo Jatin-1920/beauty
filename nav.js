@@ -53,15 +53,17 @@ ease:"power1.inOut"
 }
  
 navImage.forEach((e)=>{
-e.addEventListener("mouseOver")
+e.addEventListener("mousover",(i)=>{
 let slideTxt = e.target.dataset.slide
 let sldTxt = parseInt(slideTxt)
-gsap.to(e,{
+gsap.to(".nav-img img",{
 y:`${sldTxt}%`,
 ease:"power3.inOut",
 duration:1,
 
 })
+})
+
 }
 )
 navToggle.addEventListener("click",switchMenu)
