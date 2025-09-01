@@ -178,6 +178,11 @@ a{
  z-index:301;
  color: white;
 }
+.menu{
+background:none;
+border: none;
+}
+
 
 .navigation {
     height: 0;
