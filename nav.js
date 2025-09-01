@@ -9,11 +9,11 @@ const navImage = document.querySelectorAll(".upperNav .nav2 h1")
 const navTl = gsap.timeline({paused:true})
 
 navTl.to(".navigation",{height:"100dvh",ease:"expo.inOut",
-                 duration:.85}).from(".dLine",{scaleY:0,transformOrigin:"0% 0%" ,duration:1,
+                 duration:1.35}).from(".dLine",{scaleY:0,transformOrigin:"0% 0%" ,duration:1,
               ease:"power2.inOut"},0.2).from(".hLine",{scaleX:0,transformOrigin:"0% 0%" ,duration:1,
             ease:"power1.inOut"},0.2).to(".smoothScroll",{
 y:"30vh",
-duration:1,
+duration:1.35,
 ease:"expo.inOut"
 
 },0)
@@ -34,18 +34,18 @@ function switchMenu() {
 gsap.to(".nav-img",{
 display:"flex",
 duration:0,
-delay:1.2,
+delay:1.7,
 })
 gsap.to(".nav-mask",{
 scaleX:0,
 transformOrigin:"left",
-delay:1.4,
+delay:1.9,
 duration:.6,
 ease:"power1.inOut"
 })
 gsap.from(".nav-img img",{
 scale:1.2,
-delay:1.6,
+delay:2.1,
 duration:.85,
 ease:"power1.inOut"
 })
