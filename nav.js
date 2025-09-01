@@ -25,29 +25,9 @@ function switchMenu() {
   if(state){
     navTl.play()
 
-gsap.to(".nav-mask",{
-scaleX:0,
-ease:"power1.inOut",
 
-duration:.6,
-delay:.8,
-transformOrigin:"left"
-})
-gsap.from(".nav-img img",{
-scale:1.2,
-ease:"power1.inOut",
-delay:.85,
-duration:1,
-})
   } else{
-gsap.to(".nav-mask",{
-scaleX:1,
-ease:"power1.inOut",
 
-duration:.1,
-delay:2,
-transformOrigin:"left"
-})
     navTl.reverse()
 
   }
