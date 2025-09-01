@@ -26,18 +26,18 @@ function switchMenu() {
     navTl.play()
 
 gsap.to(".nav-mask",{
-scaleY:0,
-ease:"power3.inOut",
+scaleX:0,
+ease:"power1.inOut",
 
 duration:.6,
 delay:.8,
-transformOrigin:"bottom"
+transformOrigin:"left"
 })
 gsap.from(".nav-img img",{
 scale:1.15,
-ease:"power3.inOut",
+ease:"power1.inOut",
 delay:1.2,
-duration:.7,
+duration:1,
 })
   } else{
     navTl.reverse()
