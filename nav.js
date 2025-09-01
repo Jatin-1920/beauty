@@ -19,7 +19,7 @@ ease:"expo.inOut"
 },0).to(".mask-body",{
 display:"block"
 },0).to(".mask-body",{
-opacity:.85,
+opacity:.9,
 duration:1.35,
 ease:"power1.inOut"
 },0)
@@ -52,7 +52,7 @@ ease:"power1.inOut"
 gsap.from(".nav-img img",{
 scale:1.2,
 delay:2.1,
-duration:.9,
+duration:.85,
 ease:"power1.inOut"
 })
 
