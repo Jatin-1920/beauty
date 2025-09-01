@@ -36,7 +36,7 @@ transformOrigin:"left"
 gsap.from(".nav-img img",{
 scale:1.2,
 ease:"power1.inOut",
-delay:1,
+delay:.85,
 duration:.85,
 })
   } else{
