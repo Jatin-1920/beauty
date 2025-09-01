@@ -229,16 +229,14 @@ text-align:center;
 
 .top-line{
     top: 1rem;
-margin-inline:auto;
-width: calc(100% - 2rem);
+
 }
 
 .nav {
     position: relative;
     height: 60dvh;
 display: flex;
-margin-inline:auto;
-width: calc(100% - 2rem);
+
 }
 .leftNav{
     flex:1;
