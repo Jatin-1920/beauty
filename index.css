@@ -189,10 +189,7 @@ position: fixed;
 z-index: 300;
 overflow: clip;
 }
-.menu{
-z-index:301;
-positive:relative;
-}
+
 
 .nav-title {
   position: relative;
@@ -201,9 +198,7 @@ positive:relative;
 text-align:center;
 
 }
-.nav-title div,.nav-title p{
-    flex: 1;
-}
+
 
 .top-line{
     top: 0;
