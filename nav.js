@@ -13,7 +13,7 @@ navTl.to(".navigation",{height:"100dvh",ease:"power1.inOut",
               ease:"power2.inOut"},0.2).from(".hLine",{scaleX:0,transformOrigin:"0% 0%" ,duration:1,
             ease:"power1.inOut"},0.2).to(".smoothScroll",{
 y:"20vh",
-duration:.7,
+duration:.85,
 ease:"power3.inOut"
 
 },0)
