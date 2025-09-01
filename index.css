@@ -171,7 +171,7 @@ a{
 .header{
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -184,7 +184,7 @@ a{
     inset: 0;
     width: 100vw;
     background-color: grey;
-    padding-inline:.5rem ;
+    padding-inline:1rem ;
 position: fixed;
 z-index: 300;
 overflow: clip;
@@ -193,7 +193,7 @@ overflow: clip;
 
 .nav-title {
   position: relative;
-  padding-block: 2rem;
+  padding-block: 2.5rem;
   display: flex;
 text-align:center;
 
