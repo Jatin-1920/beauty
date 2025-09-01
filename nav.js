@@ -57,7 +57,7 @@ e.addEventListener("mouseover",(i)=>{
 let slideTxt = e.dataset.slide
 let sldTxt = parseInt(slideTxt)
 gsap.to(".nav-img img",{
-y:`${sldTxt}%`,
+y:`-${sldTxt}%`,
 ease:"power3.inOut",
 duration:1,
 
