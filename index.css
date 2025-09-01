@@ -180,7 +180,7 @@ a{
 }
 
 .navigation {
-    height: 100vh;
+    height: 0;
     inset: 0;
     width: 100vw;
     background-color: grey;
