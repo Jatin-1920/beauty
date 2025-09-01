@@ -26,6 +26,11 @@ function switchMenu() {
   },1000)
   if(state){
     navTl.play()
+gsap.to(".nav-img",{
+display:"flex",
+duration:0,
+delay:.6,
+})
 gsap.to(".nav-mask",{
 scaleX:0,
 transformOrigin:"left",
@@ -35,8 +40,8 @@ ease:"power1.inOut"
 })
 gsap.from(".nav-img img",{
 scale:1.2,
-delay:.85,
-duration:1,
+delay:1,
+duration:.7,
 ease:"power1.inOut"
 })
 
