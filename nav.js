@@ -40,6 +40,14 @@ delay:.85,
 duration:.85,
 })
   } else{
+gsap.to(".nav-mask",{
+scaleX:1,
+ease:"power1.inOut",
+
+duration:.1,
+delay:2,
+transformOrigin:"left"
+})
     navTl.reverse()
 
   }
