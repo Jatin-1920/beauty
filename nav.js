@@ -24,7 +24,7 @@ function switchMenu() {
   },1000)
   if(state){
     navTl.play()
-navToggle.innerHTML = Close
+
 gsap.to(".nav-mask",{
 scaleY:0,
 ease:"power3.inOut",
@@ -41,7 +41,7 @@ duration:.7,
 })
   } else{
     navTl.reverse()
-navToggle.innerHTML = Menu
+
   }
 }
  
