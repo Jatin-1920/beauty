@@ -185,7 +185,6 @@ a{
     width: 100vw;
     background-color: grey;
     padding-inline:.5rem ;
-    padding-top:1rem;
 position: fixed;
 z-index: 300;
 overflow: clip;
