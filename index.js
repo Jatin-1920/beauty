@@ -6,7 +6,7 @@
 gsap.registerPlugin(ScrollTrigger)
 
 
-/*const motiveScroll = document.querySelector('.smoothScroll')
+const motiveScroll = document.querySelector('.smoothScroll')
 const locoScroll = new LocomotiveScroll({
   el:motiveScroll ,
   lerp: 1,
@@ -37,9 +37,9 @@ ScrollTrigger.scrollerProxy(motiveScroll, {
   
 /* pinType: motiveScroll.style.transform ? "transform": "fixed" 
 */
-}) */
+}) 
 
-gsap.fromTo[
+gsap.fromTo(
     ".card-trans",{
 y:"0%",
 z:0,
@@ -57,18 +57,17 @@ rotationX:0
             pinSpacing:false
         }
     }
-]
+)
 
- 
-/*
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update()); 
-
-ScrollTrigger.refresh(); */
-
-gsap.to[".mask-img",{
+ gsap.to(".mask-img",{
 y:"100%",
 ease:"power3.inOut",
 duration:.7,
 }
 
-]
+)
+
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update()); 
+
+ScrollTrigger.refresh(); 
+
