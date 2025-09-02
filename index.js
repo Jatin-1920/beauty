@@ -57,7 +57,8 @@ ease:"power4.inOut"
 scaleY:0,
 ease:"power1.inOut",
 duration:.7,
-delay:.5,
+delay:1,
+
 transformOrigin:"bottom"
 
 }
