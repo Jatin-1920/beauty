@@ -293,6 +293,7 @@ display: flex;
    gap: .25rem;
 }
 .nav2 h1{
+overflow:clip;
 }
 .nav3{
     padding: 1rem;
