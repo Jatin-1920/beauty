@@ -10,9 +10,9 @@ const navTl = gsap.timeline({paused:true})
 
 navTl.to(".navigation",{height:"100dvh",ease:"expo.inOut",
                  duration:1.35}).from(".dLine",{scaleY:0,transformOrigin:"0% 0%" ,duration:
-.85,
-              ease:"power1.inOut"},"+=1").from(".hLine",{scaleX:0,transformOrigin:"0% 0%" ,duration:.85,
-            ease:"power1.inOut"},"-=1").to(".smoothScroll",{
+.7,
+              ease:"power1.inOut"},"+=.7").from(".hLine",{scaleX:0,transformOrigin:"0% 0%" ,duration:.7,
+            ease:"power1.inOut"},"-=.7").to(".smoothScroll",{
 y:"30vh",
 duration:1.35,
 ease:"expo.inOut"
@@ -41,18 +41,18 @@ function switchMenu() {
 gsap.to(".nav-img",{
 display:"flex",
 duration:0,
-delay:3.2,
+delay:2.95,
 })
 gsap.to(".nav-mask",{
 scaleX:0,
 transformOrigin:"left",
-delay:3.25,
+delay:3,
 duration:.6,
 ease:"power1.inOut"
 })
 gsap.from(".nav-img img",{
 scale:1.2,
-delay:3.6,
+delay:3.3,
 duration:.85,
 ease:"power1.inOut"
 })
