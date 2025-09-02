@@ -40,7 +40,7 @@ ScrollTrigger.scrollerProxy(motiveScroll, {
 }) 
 
 gsap.fromTo(
-    ".card-trans",{
+    ".card-trans1",{
 y:"0%",
 z:0,
 rotationX:0
