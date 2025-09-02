@@ -315,7 +315,7 @@ overflow:clip;
 overflow:clip;
 }
 .nav2 div{
-font-size:var(--p1-text);
+font-size:var(--p-text);
 }
 .nav3{
     padding: 1rem;
