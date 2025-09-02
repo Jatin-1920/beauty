@@ -456,22 +456,7 @@ left: -14%;
   bottom: -35%;
   right:-15%;
 }
-.top-display{
-  padding:3rem 1rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.top-display p{
-  max-width:35rem ;
-  font-size: var(--p1-text);
-  padding-top: 1rem;
-}
-.top-display h1{
-  font-size: var(--h1-text);
-  line-height: 1.2;
-}
+
 .card-sticky{
   display: flex;
   flex-direction: column;
