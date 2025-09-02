@@ -24,7 +24,7 @@ y:0,
 ease:"power1.inOut",
 duration:1,
 stagger:{
-each:0.01
+each:0.085
 }
 },"-=1.2").to(".smoothScroll",{
 y:"30vh",
