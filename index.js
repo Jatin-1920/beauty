@@ -53,7 +53,16 @@ duration:2,
 delay:2,
 
 ease:"power4.inOut"
-})
+}).to(".mask-img",{
+scaleY:0,
+ease:"power1.inOut",
+duration:.7,
+delay:.5,
+transformOrigin:"bottom"
+
+}
+
+)
 
 gsap.fromTo(
     ".card-trans1",{
@@ -77,16 +86,7 @@ opacity:0,
     }
 )
 
- gsap.to(".mask-img",{
-scaleY:0,
-ease:"power1.inOut",
-duration:.7,
-delay:.5,
-transformOrigin:"bottom"
-
-}
-
-)
+ 
 
 gsap.to(".imgSld",{
 y:-150,
