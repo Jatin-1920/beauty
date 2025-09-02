@@ -122,7 +122,7 @@ y:"-100%",
 
 scrollTrigger:{
 trigger:tar,
-start:"top 40%"
+start:"top 35%"
 }
 
 })
@@ -133,7 +133,7 @@ start:"top 40%"
 const maskTl = gsap.timeline({
 scrollTrigger:{
 trigger:".newMask",
-start:"top 30%"
+start:"top 35%"
 }
 })
 maskTl.to(".newMask",{
