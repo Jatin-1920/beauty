@@ -441,14 +441,18 @@ perspective: 1000px;
 .card-trans1{
   transform-origin: 50% 100%;
   will-change: transform;
-  width: 100%;
-  height: 100%;
-position: absolute;
+  
 }
 .cardStick1{
-  position: relative;
+  
   display: flex;
 
+}
+.card-trans{
+width: 100%;
+  height: 100%;
+position: absolute;
+background:var(--bg-1);
 }
 .cardStick1 .card-trans{
     justify-content: center;
