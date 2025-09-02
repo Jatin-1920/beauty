@@ -6,13 +6,16 @@ const navToggle = document.querySelector(".menu")
 
 const navImage = document.querySelectorAll(".upperNav .nav2 h1")
 
+const navA = document.querySelectorAll(".a")
+const navP = document.querySelectorAll(".nav1 p")
+
 const navTl = gsap.timeline({paused:true})
 
 navTl.to(".navigation",{height:"100dvh",ease:"expo.inOut",
                  duration:1.35}).from(".dLine",{scaleY:0,transformOrigin:"0% 0%" ,duration:
 .85,
               ease:"power1.inOut"},"+=.4").from(".hLine",{scaleX:0,transformOrigin:"0% 0%" ,duration:.85,
-            ease:"power1.inOut"},"-=.8").fromTo(".a",{
+            ease:"power1.inOut"},"-=.8").fromTo([navA,navP],{
 y:-150,
 ease:"power1.inOut",
 
