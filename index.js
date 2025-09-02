@@ -38,6 +38,7 @@ ScrollTrigger.scrollerProxy(motiveScroll, {
 /* pinType: motiveScroll.style.transform ? "transform": "fixed" 
 */
 }) 
+const animTl = gsap.timeline()
 
 gsap.to(".intro-animation img",{
 clipPath: "polygon(0% 100%,100% 100%, 100% 0%,0% 0%)",
@@ -47,7 +48,7 @@ stagger:{
 amount:1.5
 },
 })
-gsap.to(".intro-animation",{
+animTl.to(".intro-animation",{
 clipPath: "polygon(0% 0%,100% 0%, 100% 0%,0% 0%)",
 duration:2,
 delay:2,
