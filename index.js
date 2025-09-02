@@ -39,6 +39,22 @@ ScrollTrigger.scrollerProxy(motiveScroll, {
 */
 }) 
 
+gsap.to(".intro-animation img",{
+clipPath: "polygon(0% 100%,100% 100%, 100% 0%,0% 0%)",
+duration:1.5,
+ease:"power4.inOut",
+stagger:{
+amount:1.5
+},
+})
+gsap.to(".intro-animation",{
+clipPath: "polygon(0% 0%,100% 0%, 100% 0%,0% 0%)",
+duration:2,
+delay:2,
+
+ease:"power4.inOut"
+})
+
 gsap.fromTo(
     ".card-trans1",{
 y:"0%",
