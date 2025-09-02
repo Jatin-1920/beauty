@@ -221,7 +221,7 @@ object-fit: cover;
 
 
 .nav-mask{
-background:var(--bg-1);
+background: #FF7B7B ;
 position: absolute;
 width:100%;
 height:100%;
