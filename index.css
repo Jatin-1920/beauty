@@ -283,8 +283,9 @@ display: flex;
 .nav1{
    padding: 1rem;
 }
-.nav1 p{
+.p{
     padding-top:2rem ;
+overflow:clip;
 }
 .nav2{
     padding-block:.5rem ;
