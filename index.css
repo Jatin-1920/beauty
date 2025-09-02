@@ -311,8 +311,11 @@ overflow:clip;
    flex-direction: column;
    gap: .25rem;
 }
-.nav2 h1{
+.nav2 h1,.nav2 div{
 overflow:clip;
+}
+.nav2 div{
+font-size:var(--p1-text);
 }
 .nav3{
     padding: 1rem;
