@@ -16,7 +16,7 @@ navTl.to(".navigation",{height:"100dvh",ease:"expo.inOut",
 .85,
               ease:"power1.inOut"},"+=.4").from(".hLine",{scaleX:0,transformOrigin:"0% 0%" ,duration:.85,
             ease:"power1.inOut"},"-=.8").fromTo([navA,navP],{
-y:"-101%",
+y:-100,
 ease:"power1.inOut",
 
 },{
