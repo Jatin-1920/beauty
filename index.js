@@ -74,10 +74,10 @@ transformOrigin:"bottom"
 
 gsap.to(".img",{
 y:-65,
-ease:"power1.inOut",
+ease:"none",
 scrollTrigger:{
 trigger:".top-display",
-start:"top -10%",
+start:"top 0%",
 end:"bottom top",
 scrub:true
 }
