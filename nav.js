@@ -62,13 +62,13 @@ delay:3.7,
 gsap.to(".nav-mask",{
 scaleX:0,
 transformOrigin:"left",
-delay:3.35,
+delay:3.75,
 duration:.6,
 ease:"power1.inOut"
 })
 gsap.from(".nav-img img",{
 scale:1.2,
-delay:3.5,
+delay:3.95,
 duration:.85,
 ease:"power1.inOut"
 })
