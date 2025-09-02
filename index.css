@@ -284,13 +284,13 @@ display: flex;
    padding: 1rem;
 }
 .p{
-height:100%;
-padding-top:2rem;
+display:inline-block;
 overflow:clip;
+margin-top:2rem;
 }
 .pDiv{
 overflow:clip;
-padding-top:2rem;
+
 }
 .nav2{
     padding-block:.5rem ;
