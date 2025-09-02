@@ -521,3 +521,9 @@ justify-content: center;
 align-items: center;
 margin-top: 1.5rem;
 }
+
+.prodDisp{
+width:100vw;
+height:100dvh;
+background: black;
+}
