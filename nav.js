@@ -19,7 +19,8 @@ ease:"power1.inOut",
 },{
 y:0,
 ease:"power1.inOut",
-duration:.85,
+duration:1,
+stagger:0.01
 },"-=1.2").to(".smoothScroll",{
 y:"30vh",
 duration:1.35,
