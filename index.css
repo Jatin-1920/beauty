@@ -256,7 +256,9 @@ overflow:clip;
 .lNav{
 display:flex;
 flex-direction: column;
-padding:2rem;
+padding-block:2rem;
+padding-inline:3rem 1rem;
+width:100%;
 }
 .lNav h1{
 overflow:clip;
