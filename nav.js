@@ -18,13 +18,14 @@ navTl.to(".navigation",{height:"100dvh",ease:"expo.inOut",
             ease:"power1.inOut"},"-=.8").fromTo([navA,navP],{
 y:-100,
 ease:"power1.inOut",
-stagger:{
-each:0.01
-}
+
 },{
 y:0,
 ease:"power1.inOut",
 duration:1,
+stagger:{
+each:0.01
+}
 },"-=1.2").to(".smoothScroll",{
 y:"30vh",
 duration:1.35,
