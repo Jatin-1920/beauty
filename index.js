@@ -73,7 +73,7 @@ transformOrigin:"bottom"
 )
 
 gsap.to(".imgSld",{
-y:-65,
+y:-150,
 ease:"none",
 scrollTrigger:{
 trigger:".top-display",
