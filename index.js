@@ -53,7 +53,7 @@ rotationX:0
             start:"top 85%",
             end:"top -75%",
             scrub:true,
-            pin:".cardStick2",
+            pin:".cardStick1",
             pinSpacing:false
         }
     }
