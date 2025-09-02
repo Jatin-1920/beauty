@@ -284,7 +284,8 @@ display: flex;
    padding: 1rem;
 }
 .p{
-    padding-top:2rem ;
+height:100%;
+padding-top:2rem ;
 overflow:clip;
 }
 .nav2{
