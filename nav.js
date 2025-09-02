@@ -76,7 +76,7 @@ ease:"power1.inOut"
   } else{
 gsap.to(".nav-mask",{
 scaleX:1,
-delay:2.1,
+delay:2.35,
 duration:1,
 ease:"power1.inOut"
 })
