@@ -253,9 +253,12 @@ display: flex;
 display:flex;
 flex-direction: column;
 overflow:clip;
+gap:.75rem;
+padding:2rem;
 }
 .leftNav h1{
 overflow:clip;
+font-size:var(--l-text);
 }
 .dLine{
     position: absolute;
