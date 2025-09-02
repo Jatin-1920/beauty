@@ -57,7 +57,7 @@ function switchMenu() {
 gsap.to(".nav-img",{
 display:"flex",
 duration:0,
-delay:3.15,
+delay:3.7,
 })
 gsap.to(".nav-mask",{
 scaleX:0,
@@ -76,7 +76,7 @@ ease:"power1.inOut"
   } else{
 gsap.to(".nav-mask",{
 scaleX:1,
-delay:2.4,
+delay:2.1,
 duration:1,
 ease:"power1.inOut"
 })
