@@ -146,7 +146,7 @@ ease:"power3.inOut"
 scale:1.2,
 duration:1,
 ease:"power1.inOut"
-},"+=.65")
+},"+=.5")
 
 
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update()); 
