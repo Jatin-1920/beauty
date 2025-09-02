@@ -7,7 +7,7 @@ const navToggle = document.querySelector(".menu")
 const navImage = document.querySelectorAll(".upperNav .nav2 h1")
 
 const navA = document.querySelectorAll(".a")
-const navP = document.querySelectorAll(".p div")
+const navP = document.querySelectorAll(".pDiv")
 
 const navTl = gsap.timeline({paused:true})
 
