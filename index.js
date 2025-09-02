@@ -130,6 +130,23 @@ start:"top 40%"
 }
 )
 
+const maskTl = gsap.timeline({
+scrollTrigger:{
+trigger:".newMask",
+start:"top 40%"
+}
+})
+maskTl.to(".newMask",{
+scaleY:0,
+transformOrigin:"top",
+duration:1,
+ease:"power3.inOut"
+
+}).from(".card-img2 img",{
+scale:1.2,
+duration:1,
+ease:"power1.inOut"
+},"+=.65")
 
 
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update()); 
