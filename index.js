@@ -43,10 +43,12 @@ gsap.fromTo(
     ".card-trans1",{
 y:"0%",
 z:0,
+opacity:1,
 rotationX:0
     },{
         y:"-50%",
         z:-250,
+opacity:0,
         rotationX:45,
         scrollTrigger:{
             trigger:".cardStick2",
