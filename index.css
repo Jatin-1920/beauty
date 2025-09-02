@@ -260,7 +260,7 @@ padding:2rem;
 }
 .lNav h1{
 overflow:clip;
-font-size:var(--brg-heading);
+font-size:var(--h1-text);
 }
 .dLine{
     position: absolute;
