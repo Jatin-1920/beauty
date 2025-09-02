@@ -517,9 +517,10 @@ z-index: 2;
   gap: 1rem;
 }
 .cardStick2{
-height:80vh;
+height:82vh;
 width:95vw;
 margin:auto;
+padding-block:2rem;
 }
 .card-info1,.card-img2{
   flex: 1;
