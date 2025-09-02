@@ -290,6 +290,7 @@ overflow:clip;
 }
 .pDiv{
 overflow:clip;
+padding-top:2rem;
 }
 .nav2{
     padding-block:.5rem ;
