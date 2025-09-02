@@ -102,7 +102,31 @@ scrub:true
 
 )
 
+let spil;
+const targets = gsap.utils.toArray(".splits")
+targets.forEach(tar=>{
+let splitt = SplitText.create(tar,{
+type:"word,char,lines",
+autoSplit:true,
+mask:"lines",
 
+})
+gsap.from(splitt.lines,{
+duration:.6,
+stagger:{each:0.05,
+ease:"expo.out",
+y:"-100%",
+},
+
+scrollTrigger:{
+trigger:tar,
+start:"top 30%"
+}
+
+})
+
+}
+)
 
 
 
