@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const navToggle = document.querySelector(".menu")
 
+
 const navImage = document.querySelectorAll(".upperNav .nav2 h1")
 
-
+const aTxt = navImage.querySelectorAll("a")
 const navTl = gsap.timeline({paused:true})
 
 navTl.to(".navigation",{height:"100dvh",ease:"expo.inOut",
