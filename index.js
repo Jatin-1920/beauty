@@ -122,7 +122,7 @@ y:"-100%",
 
 scrollTrigger:{
 trigger:tar,
-start:"top 30%"
+start:"top 45%"
 }
 
 })
