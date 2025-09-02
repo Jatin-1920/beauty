@@ -250,11 +250,13 @@ display: flex;
 .leftNav{
     flex:1;
     position: relative;
-display:flex;
-flex-direction: column;
+
 overflow:clip;
 }
-.leftNav h1{
+.lNav{
+display:flex;
+flex-direction: column;}
+.lNav h1{
 overflow:clip;
 font-size:var(--brg-heading);
 }
