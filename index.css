@@ -253,8 +253,6 @@ display: flex;
 display:flex;
 flex-direction: column;
 overflow:clip;
-
-padding:2rem;
 }
 .leftNav h1{
 overflow:clip;
