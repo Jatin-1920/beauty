@@ -255,7 +255,7 @@ flex-direction: column;
 overflow:clip;
 }
 .leftNav h1{
-5
+overflow:clip;
 }
 .dLine{
     position: absolute;
