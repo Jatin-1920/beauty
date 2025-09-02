@@ -255,7 +255,9 @@ overflow:clip;
 }
 .lNav{
 display:flex;
-flex-direction: column;}
+flex-direction: column;
+padding:2rem;
+}
 .lNav h1{
 overflow:clip;
 font-size:var(--brg-heading);
