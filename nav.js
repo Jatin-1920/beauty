@@ -52,7 +52,7 @@ ease:"power1.inOut"
 })
 gsap.from(".nav-img img",{
 scale:1.2,
-delay:3.3,
+delay:3.2,
 duration:.85,
 ease:"power1.inOut"
 })
