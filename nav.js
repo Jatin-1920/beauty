@@ -10,9 +10,9 @@ const navTl = gsap.timeline({paused:true})
 
 navTl.to(".navigation",{height:"100dvh",ease:"expo.inOut",
                  duration:1.35}).from(".dLine",{scaleY:0,transformOrigin:"0% 0%" ,duration:
-.7,
-              ease:"power1.inOut"},"+=.7").from(".hLine",{scaleX:0,transformOrigin:"0% 0%" ,duration:.7,
-            ease:"power1.inOut"},"-=.7").to(".smoothScroll",{
+.85,
+              ease:"power1.inOut"},"+=.4").from(".hLine",{scaleX:0,transformOrigin:"0% 0%" ,duration:.85,
+            ease:"power1.inOut"},"-=.4").to(".smoothScroll",{
 y:"30vh",
 duration:1.35,
 ease:"expo.inOut"
