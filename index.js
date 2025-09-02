@@ -142,7 +142,7 @@ transformOrigin:"top",
 duration:1,
 ease:"power3.inOut"
 
-}).from(".card-img2 img",{
+}).from(".maskImg",{
 scale:1.2,
 duration:1,
 ease:"power1.inOut"
