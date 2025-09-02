@@ -143,7 +143,7 @@ html.lenis, html.lenis body {
     --h1-text: clamp(2.8rem, 4vw + 1rem, 4rem);
     --m-text: clamp(1.35rem, 0.75vw + 0.75rem, 1.5rem);
   --ml-text: clamp(1.35rem, 2vw + 1rem, 1.75rem);
---brg-heading: clamp(1.65rem, 1vw + 1rem, 2.5rem);
+--brg-heading: clamp(1.65rem, 1vw + 1rem, 2.75rem);
 --xl-text: 13vw;
   
 }
@@ -260,7 +260,7 @@ padding:2rem;
 }
 .lNav h1{
 overflow:clip;
-font-size:var(--h1-text);
+font-size:var(--brg-heading);
 }
 .dLine{
     position: absolute;
