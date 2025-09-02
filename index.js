@@ -77,7 +77,7 @@ y:-65,
 ease:"none",
 scrollTrigger:{
 trigger:".top-display",
-start:"top 0%",
+start:"top bottom",
 end:"bottom top",
 scrub:true
 }
