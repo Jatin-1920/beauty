@@ -92,7 +92,7 @@ let sldTxt = parseInt(slideTxt)
 gsap.to(".nav-img img",{
 y:`-${sldTxt}%`,
 ease:"power3.inOut",
-duration:1,
+duration:.75,
 
 })
 })
@@ -100,7 +100,7 @@ e.addEventListener("mouseleave",(i)=>{
 gsap.to(".nav-img img",{
 y:0,
 ease:"power3.inOut",
-duration:1,
+duration:.75,
 
 })
 })
