@@ -9,9 +9,9 @@ const navImage = document.querySelectorAll(".upperNav .nav2 h1")
 const navTl = gsap.timeline({paused:true})
 
 navTl.to(".navigation",{height:"100dvh",ease:"expo.inOut",
-                 duration:1.35}).from(".dLine",{scaleY:0,transformOrigin:"0% 0%" ,duration:1.5,
-              ease:"power1.inOut"},"+=1").from(".hLine",{scaleX:0,transformOrigin:"0% 0%" ,duration:1.5,
-            ease:"power1.inOut"},"+=1").to(".smoothScroll",{
+                 duration:1.35}).from(".dLine",{scaleY:0,transformOrigin:"0% 0%" ,duration:1,
+              ease:"power1.inOut"},"+=.85").from(".hLine",{scaleX:0,transformOrigin:"0% 0%" ,duration:1,
+            ease:"power1.inOut"},"+=.85").to(".smoothScroll",{
 y:"30vh",
 duration:1.35,
 ease:"expo.inOut"
