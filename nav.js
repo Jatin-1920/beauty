@@ -16,16 +16,13 @@ navTl.to(".navigation",{height:"100dvh",ease:"expo.inOut",
 .85,
               ease:"power1.inOut"},"+=.4").from(".hLine",{scaleX:0,transformOrigin:"0% 0%" ,duration:.85,
             ease:"power1.inOut"},"-=.8").fromTo([navA,navP],{
-y:-150,
+y:"-101%",
 ease:"power1.inOut",
 
 },{
 y:0,
 ease:"power1.inOut",
 duration:1,
-stagger:{
-each:0.05
-}
 },"-=1.2").to(".smoothScroll",{
 y:"30vh",
 duration:1.35,
