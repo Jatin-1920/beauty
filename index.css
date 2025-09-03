@@ -493,6 +493,10 @@ margin-top:5rem;
 height:45vh;
 width:17vw;
 }
+.topD2 p{
+font-size:var(--p-text);
+font-weight:bold;
+}
 .topD{
 flex:1;
 }
