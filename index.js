@@ -137,7 +137,7 @@ trigger:e.target,
 start:"top 35%"
 }
 })
-const newMask = e.querySelector(".newMaskI")
+const newMask = e.querySelector(".newMask")
 const newMaskImg = e.querySelector(".maskImg")
 maskImgTl.to(newMask,{
 scaleY:0,
