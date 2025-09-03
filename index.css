@@ -494,6 +494,9 @@ justify-content:end;
 height:55vh;
 width:20vw;
 }
+.topD2 .topDImg img{
+height:120%;
+}
 .topD1 p{
 font-size:var(--p-text);
 font-weight:bold;
