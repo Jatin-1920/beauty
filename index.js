@@ -160,24 +160,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const prlxSection = document.querySelectorAll(".prlx")
 
   prlxSection.forEach(e=>{
-    const prlxImg = e.querySelector("img")
-
-    const prlxTl = gsap.timeline({
-      scrollTrigger:{
+  const prlxImg  = e.querySelector("img")
+  const prlxTl = gsap.timeline({
+    scrollTrigger: {
         trigger:e,
-        start:"top bottom",
-        end:"bottom top",
-        scrub:true
-      }
-    })
-    const yHeight = prlxImg.offsetHeight - e.offsetHeight
-    prlxTl.fromTo(prlxImg,{
-      y:-yHeight
-    },{
-      y:0,
-      ease:"none"
-    })
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+
+    }
+})
+  const yHeight = prlxImg.offsetHeight - e.offsetHeight 
+
+  prlxTl.fromTo(prlxImg,{y:-yHeight},{
+    y:0,
+    ease:"none"
   })
+})
 
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
