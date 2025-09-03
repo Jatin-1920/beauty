@@ -130,10 +130,12 @@ start:"top 35%"
 }
 )
 
-const maskTl = document.querySelectorAll(".maskG") maskTl.forEach(e=>{
+let maskTl = document.querySelectorAll(".maskG")
+
+ maskTl.forEach(e=>{
 const maskImgTl = gsap.timeline({
 scrollTrigger:{
-trigger:e.target,
+trigger:e,
 start:"top 35%"
 }
 })
