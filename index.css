@@ -483,6 +483,9 @@ object-fit:cover;
 .topD2 {
 margin-top:3rem;
 }
+.topD{
+flex:1;
+}
 .card-sticky{
   display: flex;
   flex-direction: column;
