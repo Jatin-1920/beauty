@@ -19,12 +19,12 @@ overflow: clip;
     height: 60vh;
     width: 100%;
     padding: 1rem;
-    display: grid;
-    grid-template-rows: .7fr .1fr .2fr;
-
+    display: flex;
+    flex-direction: column;
+overflow: clip;
 }
 .products img{
-    height:100% ;
+    height:45vh;
     width: 100%;
     object-fit: cover;
     overflow: clip;
@@ -44,6 +44,9 @@ overflow: clip;
     grid-template-columns: 1fr 1fr;
     height: 100%;
     width: 100%;
+}
+.smlItem .products{
+    height:100%;
 }
 
 .productDiv{
