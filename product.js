@@ -34,14 +34,13 @@ const products= [
 
 const productItem = document.querySelector(".productDiv")
 
-const html = products.map(item=>{
+const html = products.map(item=>
     `
      <div class="products" id=${item.id}>
         <img src=${item.image}>
          <p class="price">$ ${item.price}</p>
         <button class="addBtn">Add To Cart</button>
     </div>
-    `
-}).join('')
+    `).join('')
 
 productItem.innerHTML = html
