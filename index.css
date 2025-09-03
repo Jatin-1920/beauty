@@ -463,12 +463,13 @@ min-height:100vh;
 gap:1rem;
 width:100%;
 padding:2rem;
-justify-content:center;
+align-items:center;
 }
 .topD{
 display:flex;
 flex-direction: column;
 gap:2rem;
+align-items:center;
 }
 .topD p{
 max-width:20rem;
