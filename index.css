@@ -488,10 +488,11 @@ object-fit:cover;
 }
 .topD2 {
 margin-top:5rem;
+justify-content:end;
 }
 .topD2 .topDImg{
-height:45vh;
-width:17vw;
+height:55vh;
+width:20vw;
 }
 .topD1 p{
 font-size:var(--p-text);
