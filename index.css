@@ -476,7 +476,7 @@ max-width:20rem;
 }
 .topDImg{
 height:55vh;
-width:25vw;
+width:22vw;
 position: relative;
 overflow:clip;
 }
@@ -491,7 +491,7 @@ margin-top:5rem;
 }
 .topD2 .topDImg{
 height:45vh;
-width:20vw;
+width:17vw;
 }
 .topD{
 flex:1;
