@@ -130,23 +130,29 @@ start:"top 35%"
 }
 )
 
-const maskTl = gsap.timeline({
+const maskTl = document.querySelectorAll(".maskG") maskTl.forEach(e=>{
+const maskImgTl = gsap.timeline({
 scrollTrigger:{
-trigger:".newMask",
+trigger:e.target,
 start:"top 35%"
 }
 })
-maskTl.to(".newMask",{
+const newMask = e.querySelector(".newMask")
+const newMaskImg = e.querySelector(".maskImg")
+maskImgTl.to(newMask,{
 scaleY:0,
 transformOrigin:"top",
 duration:1,
 ease:"power3.inOut"
 
-}).from(".maskImg",{
+}).from(newMaskImg,{
 scale:1.2,
 duration:1,
 ease:"power1.inOut"
 },"-=.5")
+
+})
+
 
 
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update()); 
