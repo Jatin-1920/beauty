@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
     y: -150,
     ease: "none",
     scrollTrigger: {
-      trigger: ".top-display",
+      trigger: ".mainImg",
       start: "top bottom",
       end: "bottom top",
       scrub: true

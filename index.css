@@ -383,6 +383,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 overflow:clip;
+padding-top: 5rem;
 
 }
 .img{
@@ -400,6 +401,7 @@ overflow:clip;
   scale:1.1;
 
 }
+
 .mask-img{
   position: absolute;
   background: white;
@@ -434,7 +436,7 @@ z-index: 3;
 .img3{
   width:9rem;
 height: 8rem;
-bottom: -14%;
+bottom: -52%;
 left: -14%;
 }
 .img4{
@@ -482,7 +484,7 @@ overflow:clip;
 }
 .topDImg img {
 position: absolute;
-height:110;
+height:110%;
 width:100%;
 object-fit:cover;
 }
@@ -493,9 +495,6 @@ justify-content:end;
 .topD2 .topDImg{
 height:55vh;
 width:20vw;
-}
-.topD2 .topDImg img{
-height:120%;
 }
 .topD1 p{
 font-size:var(--p-text);
@@ -619,7 +618,4 @@ z-index:4;
 width:100vw;
 height:100dvh;
 background: black;
-}
-.prlx img{
-height:110%;
 }

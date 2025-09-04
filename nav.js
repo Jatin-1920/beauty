@@ -51,7 +51,7 @@ function switchMenu() {
     setTimeout(()=>{
       navToggle.disabled = false;
     navToggle.innerHTML = state ? "Close":"Menu"
-  },1000)
+  },3000)
   if(state){
     navTl.play()
 gsap.to(".nav-img",{
@@ -76,11 +76,15 @@ ease:"power1.inOut"
   } else{
 gsap.to(".nav-mask",{
 scaleX:1,
-delay:2.35,
+delay:3,
 duration:1,
 ease:"power1.inOut"
 })
-    navTl.reverse()
+    navTl.reverse() 
+
+
+
+
 
   }
 }
