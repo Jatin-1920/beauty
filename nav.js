@@ -111,6 +111,7 @@ duration:.75,
 
 }
 )
+
 navToggle.addEventListener("click",switchMenu)
 })
 
