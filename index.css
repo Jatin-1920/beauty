@@ -86,7 +86,7 @@
 
     @font-face{
         font-family:thunder;
-        src:url("thunder.otf");
+        src:url("font/Coco-Gothic-Bold-trial.ttf");
     }
     @font-face{
         font-family:j2;
@@ -164,6 +164,112 @@ body{
   
 }
 
+/* cart */
+.cartItem{
+  position: fixed;
+  z-index: 302;
+  inset: 0;
+  background: wheat;
+  min-height: 100vh;
+  width: 50vw;
+  overflow: clip;
+transform: translateX(-100%);
+display: grid;
+grid-template-rows: .15fr 7fr .15fr;
+}
+.cartHeader{
+  display: grid;
+  position: sticky;
+  top:0;
+  grid-template-columns: .3fr .7fr;
+  width: 100%;
+border-bottom: 1px solid black;
+}
+.num{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cartHeader div{
+padding: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  
+}
+.cartTitle{
+
+
+  border-left: 1px solid black;
+  
+}
+.Cart-col{
+
+   padding: 1rem;
+  display: grid;
+  grid-template-columns: .4fr .3fr .3fr;
+  gap:1rem;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.Cart-col img{
+  height: 8rem;
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+.cartList{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+    padding-top: 3rem;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.cartFooter{
+  
+
+ display: grid;
+  grid-template-columns: .3fr .7fr;
+  width: 100%;
+  border-top: 1px solid black;
+}
+.cartFooter div{
+   padding: 1.5rem;
+   text-align: center;
+   font-weight: bold;
+}
+.totalSum{
+ 
+flex-basis: 70%;
+border-left: 1px solid black;
+}
+.cart-count-col{
+  display: flex;
+ gap:.75rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+}
+.cart-count-col button{
+  background: none;
+  border: none;
+  font-size: var(--ms-text);
+  color: black;
+  cursor: pointer;
+}
+
+.cartPriceCol{
+  display: flex;
+  flex-direction: column;
+  gap:.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* cart  */
 .intro-animation{
 height:100vh;
 position:fixed;
