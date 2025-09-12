@@ -9,7 +9,7 @@ productId.forEach((e, index) => {
 
 let essenceItem = []
 const store = document.querySelector('.cartList')
-
+const cartLength = document.querySelector(".cartLength")
 const sumPrice = document.querySelector('.totalSum')
 const cart = document.querySelector(".cart")
 const close = document.querySelector(".close")
@@ -23,8 +23,8 @@ cart.addEventListener("click", (e) => {
     cartTl.play()
 })
 
-close.addEventListener("click",()=>{
-cartTl.reverse()
+close.addEventListener("click", () => {
+    cartTl.reverse()
 })
 
 function countSumPrice() {
@@ -32,8 +32,13 @@ function countSumPrice() {
     essenceItem.forEach(item => {
         sumPrice += item.price
     })
+
+
     return sumPrice
 }
+
+
+
 
 
 function updating(item) {
@@ -46,6 +51,7 @@ function updating(item) {
 
     }
     essenceItem.push(item)
+
 }
 
 
@@ -167,8 +173,7 @@ store.addEventListener("itemsUpdated", displayItem)
 store.addEventListener("itemsUpdated", eventLocalStorage)
 store.addEventListener("click", (e) => {
     const id = parseInt(e.target.id)
-    if (e.target.matches("i"))
-        {   
+    if (e.target.matches("i")) {
         deleteItems(id)
     }
 

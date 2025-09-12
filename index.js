@@ -178,6 +178,30 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
+
+const hovP = document.querySelectorAll(".dispHovP")
+
+hovP.forEach((e)=>{
+e.addEventListener("mouseenter",(i)=>{
+let slideP = e.dataset.transf
+let sldP = parseInt(slideP)
+gsap.to(".dispHovI",{
+  x:`-${sldP}%`,
+  ease:"power3.inOut",
+  duration:.75
+})
+})
+e.addEventListener("mouseleave",(i)=>{
+gsap.to(".dispHovI",{
+  x:0,
+  ease:"power3.inOut",
+  duration:.75
+})
+
+})
+
+})
+
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
   ScrollTrigger.refresh();
