@@ -229,9 +229,20 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.cart i {
-  font-size: 1.25rem;
-  color: rgb(141, 140, 140);
+.cart i{
+  font-size: 1.2rem;
+  color: rgb(135, 135, 135);
+}
+.deleteCart{
+  position: absolute;
+  bottom: 0;
+  width:7rem;
+  right: 1rem;
+  padding: .35rem;
+  font-size: .8rem;
+  background: black;
+  color: white;
+  text-align: center;
 }
 
 .cartItem {
@@ -354,7 +365,8 @@ body {
   align-items: center;
   width: 100%;
   padding: 1rem;
-}
+  position: relative;
+} 
 
 /* cart  */
 .intro-animation {

@@ -94,7 +94,7 @@ function displayItem() {
           </div>
            <div class="cartPriceCol">
               <span class="cartPrice num">$ ${x.price}</span>
-              <span id="deleteCart" >       <i class="fa fa-trash" id=${x.id}></i></span>
+              <span class="deleteCart" id=${x.id}> Delete</span>
           </div>
           </div>
   
@@ -173,7 +173,7 @@ store.addEventListener("itemsUpdated", displayItem)
 store.addEventListener("itemsUpdated", eventLocalStorage)
 store.addEventListener("click", (e) => {
     const id = parseInt(e.target.id)
-    if (e.target.matches("i")) {
+    if (e.target.matches(".deleteCart")) {
         deleteItems(id)
     }
 
