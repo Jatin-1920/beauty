@@ -167,41 +167,48 @@ body {
 
 }
 
-.footer{
+.footer {
   height: 100dvh;
 }
-.footDiv{
+
+.footDiv {
   display: flex;
   height: 80vh;
   border-bottom: 1px solid black;
 }
-.foot{
+
+.foot {
   flex: 1;
 }
-.upperFoot .downFoot{
+
+.upperFoot .downFoot {
   flex: 1;
 }
-.foot2{
+
+.foot2 {
   display: flex;
   flex-direction: column;
   border-left: 1px solid black;
 }
-.upperFoot{
+
+.upperFoot {
   display: flex;
   gap: 1rem;
   border-bottom: 1px solid black;
   display: flex;
-  flex:1;
+  flex: 1;
   padding: 1.5rem;
   align-items: end;
 }
-.downFoot{
+
+.downFoot {
   flex: 1;
   padding: 1.5rem;
   display: flex;
   align-items: end;
 }
-.footLink{
+
+.footLink {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -209,16 +216,16 @@ body {
 }
 
 /* cart */
-.cart i{
+.cart i {
   position: relative;
 
 }
 
 .cartLength {
   position: absolute;
-top: -1rem;
-color: #0051ff;
-right: 0;
+  top: -1rem;
+  color: #0051ff;
+  right: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -232,12 +239,12 @@ right: 0;
   z-index: 302;
   inset: 0;
   background: rgb(200, 200, 200);
-height: 100dvh;
+  height: 100dvh;
   width: 50vw;
   overflow: clip;
   transform: translateX(-100%);
   display: grid;
-  grid-template-rows: .12fr .76fr .12fr
+  grid-template-rows: .12fr .76fr .12fr;
 }
 
 .cartHeader {
@@ -269,27 +276,28 @@ height: 100dvh;
 
 .Cart-col {
 
-  padding: 1rem;
+
   display: grid;
   grid-template-columns: .4fr .3fr .3fr;
-  gap: 1rem;
+
   width: 100%;
   border-bottom: 1px solid black;
 }
 
 .Cart-col img {
-  height: 8rem;
+  height: 10rem;
   width: 100%;
+  padding: .5rem;
   aspect-ratio: 3/4;
   object-fit: cover;
+
 }
 
 .cartList {
-  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding-top: 3rem;
+   padding-bottom: 1.5rem;
+
   overflow-y: scroll;
   height: 100%;
   position: relative;
@@ -301,6 +309,9 @@ height: 100dvh;
   display: grid;
   grid-template-columns: .3fr .7fr;
   width: 100%;
+  background: inherit;
+  position: relative;
+  z-index: 3;
   border-top: 1px solid black;
 }
 
@@ -323,6 +334,7 @@ height: 100dvh;
   align-items: center;
   width: 100%;
   height: 100%;
+  border-left: 1px solid black;
 
 }
 
@@ -341,6 +353,7 @@ height: 100dvh;
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 1rem;
 }
 
 /* cart  */
@@ -404,8 +417,9 @@ a {
   width: 6rem;
 
 }
-.menu:hover{
-  background:indianred;
+
+.menu:hover {
+  background: indianred;
   color: black;
 }
 
@@ -871,26 +885,29 @@ a {
   margin-inline: auto;
 }
 
-.prodDispHead{
+.prodDispHead {
   border-bottom: 1px solid black;
   display: grid;
   grid-template-columns: .25fr .7fr;
 }
-.prodDispHead>*{
+
+.prodDispHead>* {
   padding: 1rem;
 }
-.prodDispHead p{
+
+.prodDispHead p {
   display: flex;
   align-items: end;
-  
+
 }
-.prodDispHead h1{
+
+.prodDispHead h1 {
   text-align: center;
   font-size: .8rem;
   border-left: 1px solid black;
 }
 
-.prodDispHover{
+.prodDispHover {
   display: grid;
   height: 50vh;
   overflow: clip;
@@ -898,61 +915,64 @@ a {
   grid-template-columns: .25fr .5fr .25fr;
 }
 
-.dispHovList{
-  display:flex;
+.dispHovList {
+  display: flex;
   height: 100%;
-flex-direction: column;
+  flex-direction: column;
 }
-.dispHovList >*{
- width: 100%;
- padding-left: 1rem;
- height: 100%;
+
+.dispHovList>* {
+  width: 100%;
+  padding-left: 1rem;
+  height: 100%;
   flex: 1;
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
 }
 
-.dispHovP:hover{
+.dispHovP:hover {
   background: black;
   color: white;
 }
 
-.dispHovImg{
+.dispHovImg {
   overflow: clip;
   height: 50vh;
   width: 100%;
   display: flex;
 }
-.dispHovImg img{
+
+.dispHovImg img {
   height: 100%;
   max-width: 100%;
   object-fit: cover;
   aspect-ratio: 4/4;
 }
 
-.marqueeDiv{
+.marqueeDiv {
 
   border-left: 1px solid black;
-border-right: 1px solid black;
-overflow: clip;
-max-width: 100%;
+  border-right: 1px solid black;
+  overflow: clip;
+  max-width: 100%;
 }
 
-.marquee{
-display: flex;
+.marquee {
+  display: flex;
 }
 
-.marquee h1{
+.marquee h1 {
   white-space: nowrap;
   margin-inline: 1.5rem;
 }
 
 
 @media (max-width:750px) {
-  .cartItem{
+  .cartItem {
     width: 100vw;
   }
+
   .leftNav {
     width: 40%;
     flex: none;
