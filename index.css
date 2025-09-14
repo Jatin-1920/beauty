@@ -725,58 +725,7 @@ a {
   right: -15%;
 }
 
-.topDisp {
-  display: flex;
-  min-height: 100vh;
-  gap: 1rem;
-  width: 100%;
-  margin-block: 5vh;
-  align-items: center;
-}
 
-.topD {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-}
-
-.topD p {
-  max-width: 20rem;
-}
-
-.topDImg {
-  height: 75vh;
-  width: 30vw;
-  position: relative;
-  overflow: clip;
-}
-
-.topDImg img {
-  position: absolute;
-  height: 110%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.topD2 {
-  margin-top: 5vh;
-  justify-content: end;
-}
-
-.topD2 .topDImg {
-  height: 55vh;
-  width: 20vw;
-}
-
-.topD1 p {
-  font-size: var(--p-text);
-  font-weight: bold;
-}
-
-.topD {
-  flex: 1;
-}
 
 .card-sticky {
   display: flex;
@@ -910,7 +859,7 @@ a {
 .lookBook{
   height: 100vh;
   width: 100%;
-  margin-block: 5rem;
+  margin-block:10rem 5rem;
   display: flex;
   border: 1px solid black;
 

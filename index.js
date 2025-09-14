@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // parallax section //
-  const prlxSection = document.querySelectorAll(".prlx")
+/*  const prlxSection = document.querySelectorAll(".prlx")
 
   prlxSection.forEach(e => {
     const prlxImg = e.querySelector("img")
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-
+*/
   const hovP = document.querySelectorAll(".dispHovP")
 
   hovP.forEach((e) => {
