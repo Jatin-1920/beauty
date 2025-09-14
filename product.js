@@ -18,7 +18,13 @@ cartTl.to(".cartItem", {
     duration: 1,
     ease: "power3.inOut",
     x: 0
-})
+}).to(".cartMask",{
+    display:"flex"
+},0).to(".cartMask",{
+    opacity:.9,
+duration:.8,
+ease:"power1.inOut"
+},.2)
 cart.addEventListener("click", (e) => {
     cartTl.play()
 })

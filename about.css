@@ -1,0 +1,32 @@
+
+.aboutMainSection{
+    min-height: 100vh;
+    padding-inline: 1.5rem;
+    padding-top: 8rem;
+}
+
+.aboutMain{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+      max-width: 40rem;
+      margin-inline: auto;
+}
+.aboutMain p{
+     font-size: var(--p-text);
+    font-weight: bold;
+}
+.aboutMainP{
+  
+   
+    display: flex;
+    gap: 1rem;
+    max-width: 25rem;
+    justify-content: space-between;
+
+}
+
+.aboutMainP p{
+     font-size: 1rem;
+    font-weight: bold;
+}

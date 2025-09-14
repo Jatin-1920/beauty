@@ -124,7 +124,7 @@ html.lenis body {
   --h1-font: clamp(1.75rem, 2vw + 1rem, 3rem);
   --bg-1: #ffffff;
   --bg-2: white;
-  --bg-3: #EDEADE;
+  --bg-3: #e0e0e0;
   --bg-4: #151515;
   --bg-5: white;
   --bg-p: #787786;
@@ -169,6 +169,7 @@ body {
 
 .footer {
   height: 100dvh;
+  border-top: 1px solid black;
 }
 
 .footDiv {
@@ -176,7 +177,11 @@ body {
   height: 80vh;
   border-bottom: 1px solid black;
 }
-
+.foot1{
+  padding: 1.5rem;
+  overflow: clip;
+  display: flex;
+}
 .foot {
   flex: 1;
 }
@@ -245,11 +250,24 @@ body {
   text-align: center;
 }
 
+.deleteCart:hover{
+  background:indianred;
+  color: black;
+}
+
+.cartMask{
+  display: none;
+  opacity: 0;
+  position: fixed;
+  inset: 0;
+  z-index: 301;
+  background-color: #333;
+}
 .cartItem {
   position: fixed;
   z-index: 302;
   inset: 0;
-  background: rgb(200, 200, 200);
+  background: rgb(250 241 202);
   height: 100dvh;
   width: 50vw;
   overflow: clip;
@@ -889,27 +907,65 @@ a {
   z-index: 4;
 }
 
-.productDisp {
-  width: 80vw;
-  margin-top: 70vh;
-  height: 100%;
+.lookBook{
+  height: 100vh;
+  width: 100%;
+  margin-block: 5rem;
+  display: flex;
   border: 1px solid black;
-  margin-inline: auto;
+
+}
+.lookbookMain,.productDisp{
+  flex: 1;
 }
 
+.lookHz{
+
+  font-size: var(--p-text);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+}
+
+.lookHz p{
+  transform: rotate(90deg);
+}
+
+.lookbookMain{
+  display: flex;
+}
+.lookbookContent{
+  flex: 1;
+}
+.productDisp {
+  padding-block: 1rem;
+}
+.lookbookMain{
+  border-right: 1px solid black;
+}
 .prodDispHead {
-  border-bottom: 1px solid black;
-  display: grid;
-  grid-template-columns: .25fr .7fr;
+  border-block: 1px solid black;
+  display: flex;
+  justify-content: space-between;
 }
 
-.prodDispHead>* {
-  padding: 1rem;
-}
+  
+
+
 
 .prodDispHead p {
+  padding-block: .5rem;
+  padding-inline: 1.25rem;
+  font-size: .8rem;
+  flex: 1;
+
+}
+.prodHeadP2{
+  border-left: 1px solid black;
   display: flex;
-  align-items: end;
+  justify-content: end;
 
 }
 
@@ -920,26 +976,28 @@ a {
 }
 
 .prodDispHover {
-  display: grid;
-  height: 50vh;
+  display: flex;
+  flex-direction: column;
   overflow: clip;
   width: 100%;
-  grid-template-columns: .25fr .5fr .25fr;
 }
 
 .dispHovList {
   display: flex;
   height: 100%;
   flex-direction: column;
+  border-top:1px solid black;
 }
 
 .dispHovList>* {
   width: 100%;
   padding-left: 1rem;
+  padding-block: .25rem;
   height: 100%;
   flex: 1;
   display: flex;
   align-items: center;
+  font-size: .8rem;
   border-bottom: 1px solid black;
 }
 
@@ -948,18 +1006,34 @@ a {
   color: white;
 }
 
+.lookbookImg{
+  display: flex;
+  overflow: clip;
+height: 56vh;
+width: calc(100% - 2rem);
+padding-top: 1rem;
+
+}
+.lookbookHovImg{
+display: flex;
+justify-content: center;
+overflow: clip;
+background:var(--bg-3);
+height: 100%;
+}
 .dispHovImg {
   overflow: clip;
-  height: 50vh;
   width: 100%;
-  display: flex;
+padding: 1rem;
+  height:70vh;
 }
 
 .dispHovImg img {
-  height: 100%;
-  max-width: 100%;
-  object-fit: cover;
-  aspect-ratio: 4/4;
+  height: 50vh;
+  min-width: 100%;
+  
+  object-fit: cover; 
+
 }
 
 .marqueeDiv {
@@ -979,6 +1053,19 @@ a {
   margin-inline: 1.5rem;
 }
 
+.maskG{
+  position: relative;
+  overflow: clip;
+  height: 100%;
+  width: 100%;
+}
+.maskG img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
 
 @media (max-width:750px) {
   .cartItem {

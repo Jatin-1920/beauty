@@ -3,7 +3,7 @@
 
 
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger, SplitText)
 document.addEventListener("DOMContentLoaded", () => {
 
   const motiveScroll = document.querySelector('.smoothScroll')
@@ -159,49 +159,51 @@ document.addEventListener("DOMContentLoaded", () => {
   // parallax section //
   const prlxSection = document.querySelectorAll(".prlx")
 
-  prlxSection.forEach(e=>{
-  const prlxImg  = e.querySelector("img")
-  const prlxTl = gsap.timeline({
-    scrollTrigger: {
-        trigger:e,
+  prlxSection.forEach(e => {
+    const prlxImg = e.querySelector("img")
+    const prlxTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: e,
         start: "top bottom",
         end: "bottom top",
         scrub: true,
 
-    }
-})
-  const yHeight = prlxImg.offsetHeight - e.offsetHeight 
+      }
+    })
+    const yHeight = prlxImg.offsetHeight - e.offsetHeight
 
-  prlxTl.fromTo(prlxImg,{y:-yHeight},{
-    y:0,
-    ease:"none"
+    prlxTl.fromTo(prlxImg, { y: -yHeight }, {
+      y: 0,
+      ease: "none"
+    })
   })
-})
 
 
-const hovP = document.querySelectorAll(".dispHovP")
+  const hovP = document.querySelectorAll(".dispHovP")
 
-hovP.forEach((e)=>{
-e.addEventListener("mouseenter",(i)=>{
-let slideP = e.dataset.transf
-let sldP = parseInt(slideP)
-gsap.to(".dispHovI",{
-  x:`-${sldP}%`,
-  ease:"power3.inOut",
-  duration:.75
-})
-})
-e.addEventListener("mouseleave",(i)=>{
-gsap.to(".dispHovI",{
-  x:0,
-  ease:"power3.inOut",
-  duration:.75
-})
+  hovP.forEach((e) => {
+    e.addEventListener("mouseenter", (i) => {
+      let slideP = e.dataset.transf
+      let sldP = parseInt(slideP)
+      gsap.to(".dispHovI", {
+        x: `-${sldP}%`,
+        ease: "power3.inOut",
+        duration: .75
+      })
+    })
+    e.addEventListener("mouseleave", (i) => {
+      gsap.to(".dispHovI", {
+        x: 0,
+        ease: "power3.inOut",
+        duration: .75
+      })
 
-})
+    })
 
-})
+  })
 
+
+  
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
   ScrollTrigger.refresh();
