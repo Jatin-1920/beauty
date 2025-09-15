@@ -1,14 +1,19 @@
 
 
 
-gsap.registserPlugin(SplitText,ScrollTrigger)
+
+
 
 const targetS = gsap.utils.toArray(".splitA")
+
+
+
   targetS.forEach(ta => {
     let splits = SplitText.create(ta, {
       type: "word,char,lines",
       autoSplit: true,
       mask: "lines",
+      
 
     })
     gsap.from(splits.lines, {
@@ -25,6 +30,6 @@ const targetS = gsap.utils.toArray(".splitA")
       }
 
     })
+    })
 
-  }
-  )
+  

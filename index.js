@@ -6,10 +6,13 @@
 gsap.registerPlugin(ScrollTrigger, SplitText)
 document.addEventListener("DOMContentLoaded", () => {
 
+
+
   const motiveScroll = document.querySelector('.smoothScroll')
   const locoScroll = new LocomotiveScroll({
     el: motiveScroll,
-    lerp: 0.5,
+    lerp:1,
+  
     gestureDirection: "both",
     smartphone: {
       smooth: true
@@ -35,9 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ,
 
 
-    /* pinType: motiveScroll.style.transform ? "transform": "fixed" */
+   /*  pinType: motiveScroll.style.transform ? "transform": "fixed" */
     
   })
+  
   const animTl = gsap.timeline()
 
   gsap.to(".intro-animation img", {
@@ -97,7 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
       trigger: ".mainImg",
       start: "top bottom",
       end: "bottom top",
-      scrub: true
+      scrub: true,
+      scroller:motiveScroll
     }
 
   }
@@ -187,6 +192,7 @@ const prlxTl = gsap.timeline({
         start: "top bottom",
         end: "bottom top",
         scrub: true,
+        scroller:motiveScroll
 
       }
     })
@@ -233,6 +239,6 @@ prlxTl.fromTo(prlxImg,{
   
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-  ScrollTrigger.refresh();
+  ScrollTrigger.refresh(); 
 })
 
