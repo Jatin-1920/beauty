@@ -126,7 +126,7 @@ html.lenis body {
   --bg-2: white;
   --bg-3: #e0e0e0;
   --bg-4: #151515;
-  --bg-5: white;
+  --bg-5: #d1c7a3;
   --bg-p: #787786;
   --bg-slider: black;
   --nav-p: #0e2954;
@@ -149,7 +149,7 @@ html.lenis body {
   --ml-text: clamp(1.35rem, 2vw + 1rem, 1.75rem);
   --brg-heading: clamp(2rem, 1vw + 2rem, 2.75rem);
   --xl-text: 13vw;
-
+--grid-clr:#645832;
 }
 
 body {
@@ -856,18 +856,67 @@ a {
   z-index: 4;
 }
 
+
+.prlxSection{
+  height: 120vh;
+  width: 100%;
+  overflow: clip;
+  position: relative;
+  margin-block: 5rem;
+}
+.prlxImg{
+  position: absolute;
+  height: 140%;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
+
+.prlxItem{
+height: 55vh;
+width: 20vw;
+padding: 1rem;
+background: whitesmoke;
+display: flex;
+flex-direction: column;
+gap: .5rem;
+position: absolute;
+}
+.prlxItem1{
+  top: 20%;
+  left: 7.5%;
+}
+.prlxItem2{
+  bottom: 10%;
+  right: 7.5%;
+}
+.prlxItem img{
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/4;
+}
+.prlxCont{
+height: 30%;
+display: flex;
+justify-content: space-between;
+}
 .lookBook{
   height: 100vh;
   width: 100%;
-  margin-block:10rem 5rem;
+  margin-block: 5rem;
   display: flex;
   border: 1px solid black;
-
+background: var(--grid-clr);
+color: white;
 }
-.lookbookMain,.productDisp{
+.lookbookMain{
   flex: 1;
 }
-
+.productDisp{
+  width: 40%;
+}
 .lookHz{
 
   font-size: var(--p-text);
@@ -875,11 +924,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid black;
+  border-right: 1px solid var(--bg-5);
 }
 
-.lookHz p{
-  transform: rotate(90deg);
+.hz>*{
+  transform: rotate(-90deg);
 }
 
 .lookbookMain{
@@ -892,10 +941,10 @@ a {
   padding-block: 1rem;
 }
 .lookbookMain{
-  border-right: 1px solid black;
+  border-right: 1px solid var(--bg-5);
 }
 .prodDispHead {
-  border-block: 1px solid black;
+  border-block: 1px solid var(--bg-5);
   display: flex;
   justify-content: space-between;
 }
@@ -912,7 +961,7 @@ a {
 
 }
 .prodHeadP2{
-  border-left: 1px solid black;
+  border-left: 1px solid var(--bg-5);
   display: flex;
   justify-content: end;
 
@@ -921,7 +970,7 @@ a {
 .prodDispHead h1 {
   text-align: center;
   font-size: .8rem;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--bg-5);
 }
 
 .prodDispHover {
@@ -935,7 +984,7 @@ a {
   display: flex;
   height: 100%;
   flex-direction: column;
-  border-top:1px solid black;
+  border-top:1px solid var(--bg-5);
 }
 
 .dispHovList>* {
@@ -947,7 +996,7 @@ a {
   display: flex;
   align-items: center;
   font-size: .8rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--bg-5);
 }
 
 .dispHovP:hover {
@@ -1015,6 +1064,84 @@ padding: 1rem;
   object-fit: cover;
   aspect-ratio: 3/4;
 }
+
+
+
+.aboutRecycle{
+    display: flex;
+    height: 80vh;
+    width: calc(100% - 4rem);
+    margin-inline: auto;
+    border: 1px solid black;
+    margin-block: 5rem;
+}
+
+.aboutRecycle1{
+    flex: 1;
+}
+.aboutRecycle2{
+    width: 40%;
+}
+
+.aboutRecycle1{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+}
+.abtCycleTop,.abtCycleBtm{
+flex: 1;
+}
+.abtCycleTop{
+    display: flex;
+    gap: 1rem;
+}
+.abtCycleTop2{
+    padding: 1rem;
+    display: flex;
+
+    font-size: .8rem;
+}
+.abtCycleTop2 p{
+    max-width: 19rem;
+}
+.abtCycleCont{
+     padding: 1rem;
+    padding-top: 2.5rem;
+    flex: 1;
+}
+.abtCycleMid{
+    height:3rem;
+    border-block: 1px solid black;
+    justify-content: center;
+    font-size: .75rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.abtCycleMid:hover{
+    background: var(--p-clr);
+    color: white;
+}
+
+.aboutRecycle2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+}
+.abtCycleTop1 h1{
+    opacity: .1;
+    line-height: 1.4;
+}
+
+.abtCycleTop1 h1:hover{
+    opacity: 1;
+}
+
+
+
+
+
 
 @media (max-width:750px) {
   .cartItem {

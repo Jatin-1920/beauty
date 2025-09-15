@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const motiveScroll = document.querySelector('.smoothScroll')
   const locoScroll = new LocomotiveScroll({
     el: motiveScroll,
-    lerp: 1,
+    lerp: 0.5,
     gestureDirection: "both",
     smartphone: {
       smooth: true
@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ,
 
 
-    /* pinType: motiveScroll.style.transform ? "transform": "fixed" 
-    */
+    /* pinType: motiveScroll.style.transform ? "transform": "fixed" */
+    
   })
   const animTl = gsap.timeline()
 
@@ -179,6 +179,33 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
 */
+const prlxSection = document.querySelector(".prlxSection")
+const prlxImg = prlxSection.querySelector(".prlxImg")
+const prlxTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: prlxSection,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+
+      }
+    })
+const prlxDiv = document.querySelectorAll(".prlxItem")
+const yHeight = prlxImg.offsetHeight - prlxSection.offsetHeight
+
+
+prlxTl.fromTo(prlxImg,{
+  y:-yHeight
+},{
+  y:0,
+  ease:"none"
+}).to(prlxDiv,{
+  y:-100,
+   ease:"none"
+},0)
+
+
+
   const hovP = document.querySelectorAll(".dispHovP")
 
   hovP.forEach((e) => {
