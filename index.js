@@ -162,53 +162,31 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // parallax section //
-/*  const prlxSection = document.querySelectorAll(".prlx")
+ const prlxSection = document.querySelectorAll(".prlxSection")
 
   prlxSection.forEach(e => {
-    const prlxImg = e.querySelector("img")
+    const prlxImg = e.querySelector(".prlxImg")
     const prlxTl = gsap.timeline({
       scrollTrigger: {
         trigger: e,
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-
+        
       }
     })
     const yHeight = prlxImg.offsetHeight - e.offsetHeight
-
+const prlxDiv = e.querySelectorAll(".prlxDiv")
     prlxTl.fromTo(prlxImg, { y: -yHeight }, {
       y: 0,
       ease: "none"
-    })
-  })
-
-*/
-const prlxSection = document.querySelector(".prlxSection")
-const prlxImg = prlxSection.querySelector(".prlxImg")
-const prlxTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: prlxSection,
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true,
-        scroller:motiveScroll
-
-      }
-    })
-const prlxDiv = document.querySelectorAll(".prlxItem")
-const yHeight = prlxImg.offsetHeight - prlxSection.offsetHeight
-
-
-prlxTl.fromTo(prlxImg,{
-  y:-yHeight
-},{
-  y:0,
-  ease:"none"
-}).to(prlxDiv,{
+    }).to(prlxDiv,{
   y:-100,
    ease:"none"
 },0)
+  })
+
+
 
 
 

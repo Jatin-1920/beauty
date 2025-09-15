@@ -122,7 +122,7 @@ html.lenis body {
 
 :root {
   --h1-font: clamp(1.75rem, 2vw + 1rem, 3rem);
-  --bg-1: #ffffff;
+  --bg-1: #ebe6d7;
   --bg-2: white;
   --bg-3: #e0e0e0;
   --bg-4: #151515;
@@ -863,6 +863,9 @@ a {
   overflow: clip;
   position: relative;
   margin-block: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .prlxImg{
   position: absolute;
@@ -902,6 +905,13 @@ height: 30%;
 display: flex;
 justify-content: space-between;
 }
+
+.prlxDiv h1{
+  font-size: var(--h1-font);
+ color:white;
+
+}
+
 .lookBook{
   height: 100vh;
   width: 100%;
@@ -1000,8 +1010,8 @@ color: white;
 }
 
 .dispHovP:hover {
-  background: black;
-  color: white;
+  background:var(--bg-5);
+  color: black;
 }
 
 .lookbookImg{
@@ -1138,9 +1148,20 @@ flex: 1;
     opacity: 1;
 }
 
+.footerPrlx{
+  width: 90vw;
+  margin-inline: auto;
+  height: 100vh;
+}
 
-
-
+.prlxMask{
+  position: absolute;
+  z-index: 1;
+  opacity: .4;
+  height: 100%;
+  width: 100%;
+  background: #333;
+}
 
 
 @media (max-width:750px) {
