@@ -94,11 +94,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-  gsap.to(".imgSld", {
+  gsap.to(".img", {
     y: -150,
     ease: "none",
     scrollTrigger: {
-      trigger: ".mainImg",
+      trigger: ".topSection",
       start: "top bottom",
       end: "bottom top",
       scrub: true,
