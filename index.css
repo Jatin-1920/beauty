@@ -633,15 +633,10 @@ a {
 }
 
 .top-section {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background:var(--bg-1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: clip;
-  padding-top: 5rem;
-
+  margin-bottom:10rem;
 }
 
 .img {
@@ -671,7 +666,9 @@ a {
   inset: 0;
 }
 
-
+.hero img{
+position: absolute;
+}
 .hero img:nth-child(1) {
     width: 37.4rem;
     height: 56.1rem;
