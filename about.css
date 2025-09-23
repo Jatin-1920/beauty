@@ -8,12 +8,12 @@
 .aboutTopSection{
     height: 100vh;
     width: 100%;
-    border-block: 1px solid black;
+    border-block: 1px solid var(--bg-5);
     display: grid;
     grid-template-columns: 1fr 5fr 1.5fr 5fr 1.5fr;
 }
 .aboutImg{
-    border-inline: 1px solid black;
+    border-inline: 1px solid var(--bg-5);
     overflow: clip;
 }
 .aboutImg img{
@@ -23,8 +23,36 @@
     object-fit: cover;
 }
 .aboutTopContent{
-    border-inline:1px solid black
+    border-inline:1px solid var(--bg-5);
+    display:flex;
+    flex-direction: column;
+justify-content: space-around;
+height: 100%;
+padding: 1rem;
+padding-inline: 2rem 1rem;
 }
+
+.aboutTopContent h3,.aboutTopP{
+    max-width: 20rem;
+}
+.aboutTopContent h3{
+font-size: var(--l-text);
+line-height: 1.2;
+}
+.aboutTopP{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.aboutTopP p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.aboutTopP p:nth-child(2){
+    font-size: .8rem;
+    font-weight: 400;
+}
+
 
 .aboutKnow{
     display: flex;
@@ -59,11 +87,12 @@
     flex-direction: column;
     gap: 1rem;
 }
+
 .aboutGrid{
     display: grid;
     height: 100vh;
-    grid-template-columns: 0.8fr 4fr 6fr;
-    border-block: 1px solid black;
+    grid-template-columns: 1fr 6fr 8fr;
+    border-block: 1px solid var(--bg-5);
 }
 .aboutGridContent{
     display: flex;
@@ -71,12 +100,12 @@
 }
 .abtGridCont{
     display: flex;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--bg-5);
     flex-basis: 35%;
 }
 .abtGridP1{
     width: 40%;
-    border-right: 1px solid black;
+    border-right: 1px solid var(--bg-5);
 }
 .abtGridContH1{
     flex: 1;
@@ -103,4 +132,128 @@
     
 }
 
+.aboutImg{
+    overflow: clip;
+    height: 100%;
+    position: relative;
+}
+.aboutImg img{
+aspect-ratio: 3/4;
+height: 100%;
+width: 100%;
+position: absolute;
+object-fit: cover;
+}
 
+
+.Hrace{
+    height: 100vh;
+    width: max-content;
+    display: flex;
+    margin-top: 5rem;
+}
+.racePrlx{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    background: white;
+}
+.racePrlx>*{
+    flex:1;
+}
+
+.raceImg{
+    position: relative;
+    height: 100%;
+    overflow: clip;
+}
+.raceImg img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+}
+
+.raceContent{
+   margin-inline: 3rem;
+    height: 75vh;
+    padding-top: 2rem;
+    border-top: 1.5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+
+}
+.raceContP{
+    font-size: 1.4rem;
+    line-height:1.4 ;
+    font-weight: bold;
+}
+.raceSocial{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.raceContItem {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 85%;
+}
+
+.racePrlx2{
+    background: black;
+    width: 100vw;
+display: flex;
+padding-inline: 3rem;
+gap: 3rem ;
+}
+.racePrlxContainer{
+display: flex;
+flex-direction: column;
+gap: 3rem;
+height: 75vh;
+border-top: 1.5px solid white;
+
+}
+.racePrlxContainer h3{
+
+color: white;
+font-size: var(--l-text);
+padding-top: 1.5rem;
+
+
+}
+.racePrjct{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    padding-block: .5rem;
+    font-size: .7rem;
+}
+.racePrlxLink{
+    width: 100%;
+}
+.raceLine{
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+
+.raceLinkImg{
+    overflow: clip;
+    height: 60vh;
+   position: relative ;
+display: flex;
+justify-content: center;
+}
+.raceLinkImg img{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+}

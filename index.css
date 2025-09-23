@@ -141,7 +141,7 @@ html.lenis body {
   --p-clr: #333;
   --ms-text: clamp(2rem, 1.5vw + .65rem, 2.25rem);
   --h2-text: clamp(2.25rem, 1.75vw + 0.75rem, 2.75rem);
-  --l-text: clamp(1.5rem, 0.75vw + 0.875rem, 1.75rem);
+  --l-text: clamp(1.5rem, 1vw + .875rem, 1.75rem);
   --p-text: clamp(1.15rem, 0.7vw + 0.5rem, 1.35rem);
   --p1-text: clamp(1.35rem, 1vw + 0.25rem, 1.45rem);
   --h1-text: clamp(2.8rem, 4vw + 1rem, 4rem);
@@ -161,21 +161,24 @@ body {
   font-family: j2;
   color: var(--p-clr);
   scrollbar-width: thin;
-  scrollbar-color: #760026;
   background: var(--bg-1);
 
+-ms-overflow-style: none;
+}
 
+::-webkit-scrollbar{
+  width: none;
 }
 
 .footer {
   height: 100dvh;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--bg-5);
 }
 
 .footDiv {
   display: flex;
   height: 80vh;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--bg-5);
 }
 .foot1{
   padding: 1.5rem;
@@ -193,13 +196,13 @@ body {
 .foot2 {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--bg-5);
 }
 
 .upperFoot {
   display: flex;
   gap: 1rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--bg-5);
   display: flex;
   flex: 1;
   padding: 1.5rem;
@@ -912,6 +915,60 @@ justify-content: space-between;
 
 }
 
+.seeItemSection{
+  height: 100%;
+  width: 100vw;
+  margin-block: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.seeItemSection a{
+  font-size: var(--p-text);
+  padding-block: 1rem;
+  text-align: center;
+  border-block: 1px solid var(--bg-5);
+}
+.seeItemSection h1{
+  font-size: var(--l-text);
+  padding-block: 1rem;
+  text-align: center;
+  width: 100%;
+  border-block: 1px solid var(--bg-5);
+}
+
+.seeItemDiv{
+  display: flex;
+  height:55vh;
+  align-items: center;
+  
+}
+.seeItem{
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+ 
+color: black;
+flex: 1;
+gap: .5rem;
+height: 55vh;
+padding:1rem;
+border-right: 1px solid var(--bg-5);
+}
+
+.seeItem img{
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.seeItemCont{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
 .lookBook{
   height: 100vh;
   width: 100%;
@@ -920,6 +977,14 @@ justify-content: space-between;
   border: 1px solid black;
 background: var(--grid-clr);
 color: white;
+}
+
+.lookbookContent h1{
+  padding: 3rem 2rem;
+  font-size: var(--h1-font);
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
 }
 .lookbookMain{
   flex: 1;
@@ -1036,6 +1101,8 @@ padding: 1rem;
   height:70vh;
 }
 
+
+
 .lookbookImg img {
   height: 50vh;
   min-width: 100%;
@@ -1060,6 +1127,125 @@ aspect-ratio: 3/4;
   margin-inline: 1.5rem;
 }
 
+.hScroll{
+  height: 100vh;
+  width: max-content;
+   padding-inline: 10vw;
+   display: flex;
+gap: 2rem;
+}
+.parallaxScroll{
+  height: 100%;
+  display: flex;
+   width:fit-content;
+ 
+}
+.raceDiv{
+display: flex;
+width: 100%;
+height: 100%;
+}
+.raceH{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.raceHCont{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.raceHCont2{
+  transform: translateX(45vw);
+  position: relative;
+  z-index: 4;
+}
+.raceDiv2{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  justify-content: center;
+}
+.raceTopP{
+  display: flex;
+  gap: 2rem;
+}
+.raceTopP p{
+max-width: 25rem;
+}
+.raceBtm{
+  position: relative;
+  z-index: 4;
+  display: flex;
+  gap: 1rem;
+}
+.raceH1{
+  font-size: 18vw;
+  font-weight: bold;
+  line-height: 1;
+ 
+}
+.raceCircle,.raceCircleImg,.raceCircles{
+  width: 11rem;
+  height: 11rem;
+  border-radius: 100%;
+  background: black;
+  color: white;
+ padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .6rem;
+  position: relative;
+  text-align: center;
+}
+.raceCircle{
+  font-size: .7rem;
+}
+.raceCircleImg{
+  overflow: clip;
+}
+.raceCircleCont{
+  display: flex;
+}
+.raceCircleImg{
+transform: translateX(1.5rem);
+position: relative;
+z-index: 4;
+}
+.raceCircleImg img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
+.raceCircleWhite{
+  background: whitesmoke;
+  color:black;
+}
+
+.raceCircle p,.raceCircles p{
+  max-width: 7rem;
+}
+
+.raceImg{
+  width: 30vw;
+  height: 75vh;
+  position: relative;
+  margin-block: auto;
+}
+.raceImg img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
 .maskG{
   position: relative;
   overflow: clip;
@@ -1081,7 +1267,7 @@ aspect-ratio: 3/4;
     height: 80vh;
     width: calc(100% - 4rem);
     margin-inline: auto;
-    border: 1px solid black;
+    border: 1px solid var(--bg-5);
     margin-block: 5rem;
 }
 
@@ -1095,7 +1281,7 @@ aspect-ratio: 3/4;
 .aboutRecycle1{
     display: flex;
     flex-direction: column;
-    border-right: 1px solid black;
+    border-right: 1px solid var(--bg-5);
 }
 .abtCycleTop,.abtCycleBtm{
 flex: 1;
@@ -1120,7 +1306,7 @@ flex: 1;
 }
 .abtCycleMid{
     height:3rem;
-    border-block: 1px solid black;
+    border-block: 1px solid var(--bg-5);
     justify-content: center;
     font-size: .75rem;
     font-weight: bold;

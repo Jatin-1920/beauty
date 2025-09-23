@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-  const motiveScroll = document.querySelector('.smoothScroll')
+  let motiveScroll = document.querySelector('.smoothScroll')
   const locoScroll = new LocomotiveScroll({
     el: motiveScroll,
-    lerp:1,
-  
+    lerp:0.5,
+    multiplier:1,
     gestureDirection: "both",
     smartphone: {
       smooth: true
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ,
 
 
-   /*  pinType: motiveScroll.style.transform ? "transform": "fixed" */
+  /*   pinType: motiveScroll.style.transform ? "transform": "fixed" */
     
   })
   
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     y: -150,
     ease: "none",
     scrollTrigger: {
-      trigger: ".topSection",
+      trigger: ".top-section",
       start: "top bottom",
       end: "bottom top",
       scrub: true,
@@ -128,7 +128,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       scrollTrigger: {
         trigger: tar,
-        start: "top 35%"
+        start: "top bottom",
+        scroller:motiveScroll
       }
 
     })
@@ -142,7 +143,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const maskImgTl = gsap.timeline({
       scrollTrigger: {
         trigger: e,
-        start: "top 35%"
+        start: "top 35%",
+        scroller:motiveScroll
       }
     })
     const newMask = e.querySelector(".newMask")
@@ -172,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-        
+        scroller:motiveScroll
       }
     })
     const yHeight = prlxImg.offsetHeight - e.offsetHeight
@@ -215,8 +217,9 @@ const prlxDiv = e.querySelectorAll(".prlxDiv")
 
 
   
-  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
   ScrollTrigger.refresh(); 
+  
 })
 
