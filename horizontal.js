@@ -1,4 +1,6 @@
 
+
+
 gsap.registerPlugin(ScrollTrigger, SplitText)
 const races = document.querySelector(".hScroll")
 function getScrollAmount(){
@@ -20,12 +22,13 @@ const parallaxDiv = document.querySelectorAll(".parallaxDiv")
 
 ScrollTrigger.create({
     trigger:".hScroll",
-    start:"top 20%",
+    start:"top 0%",
     end:()=> `+=${getScrollAmount()*-1}`,
     pin:true,
     scrub:1,
     invalidateOnRefresh:true,
     animation:slider,
+  
 })
 
       parallaxDiv.forEach(e=>{
@@ -41,7 +44,8 @@ ScrollTrigger.create({
   end:"right left",
     scrub: true,
     containerAnimation:slider,
-      id:"id"
+      id:"id",
+      scroller:".smoothScroll"
      }
 })
 
@@ -58,7 +62,19 @@ raceCircle.forEach(e=>{
   end:"right left",
     scrub: true,
     containerAnimation:slider,
-      id:"id"
+      id:"id",
+      scroller:".smoothScroll"
      }
   })
 })
+
+
+/* <section class="pinSection">
+            <div class="pinDiv">
+            <img src="img/hummingbird.jpg" alt="" class="pinImg pinImg1">
+
+<img src="img/beachbeer.jpg" alt="" class="pinImg pinImg2">
+</div>
+<div class="pinText">Scroll</div>
+
+        </section> */

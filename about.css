@@ -10,7 +10,7 @@
     width: 100%;
     border-block: 1px solid var(--bg-5);
     display: grid;
-    grid-template-columns: 1fr 5fr 1.5fr 5fr 1.5fr;
+    grid-template-columns: auto 5fr 1.5fr 5fr 1.5fr;
 }
 .aboutImg{
     border-inline: 1px solid var(--bg-5);
@@ -91,7 +91,7 @@ line-height: 1.2;
 .aboutGrid{
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 6fr 8fr;
+    grid-template-columns: auto 6fr 8fr;
     border-block: 1px solid var(--bg-5);
 }
 .aboutGridContent{
@@ -176,16 +176,15 @@ object-fit: cover;
 }
 
 .raceContent{
-   margin-inline: 3rem;
+   margin-inline:3rem;
     height: 75vh;
     padding-top: 2rem;
     border-top: 1.5px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
-
 }
+
 .raceContP{
     font-size: 1.4rem;
     line-height:1.4 ;
@@ -231,8 +230,15 @@ padding-top: 1.5rem;
     flex-direction: column;
     color: white;
     width: 100%;
-    padding-block: .5rem;
+    padding-block: 1rem;
     font-size: .7rem;
+    position: relative;
+    z-index: 2;
+}
+.racePrjct p{
+    position: relative;
+    z-index: 2;
+    padding-left: .5rem;
 }
 .racePrlxLink{
     width: 100%;
@@ -241,6 +247,8 @@ padding-top: 1.5rem;
     width: 100%;
     height: 1px;
     background: white;
+    position: absolute;
+    bottom: 0;
 }
 
 .raceLinkImg{
@@ -256,4 +264,119 @@ justify-content: center;
     height: 100%;
     object-fit: cover;
     aspect-ratio: 3/4;
+}
+
+.raceClip{
+    position: absolute;
+    inset: 0;
+    clip-path: inset(50% 0 50%);
+    transition: clip-path .4s ease-out;
+    background:white;
+}
+
+.racePrjct:hover .raceClip{
+     clip-path: inset(0 0 0);
+}
+.racePrjct:hover{
+    color: black;
+}
+
+
+@media (max-width:750px){
+    .emptyDiv{
+        display: none;
+    }
+
+    .aboutTopSection{
+        display: grid;
+      grid-template-areas:"a b b b b"
+       "a b b b b"
+      "a c c c c"
+      "a c c c c";
+    }
+    .aboutHz{
+        grid-area: a;
+        text-align: center;
+    }
+    
+.aboutTopContent{
+    grid-area: c;
+    gap: 2rem;
+   border-inline: none;
+   border-top: 1px solid var(--bg-5);
+    justify-content: center;
+  height:50vh;
+}
+.aboutImg1{
+    grid-area: b;
+    border-inline: none;
+    height:50vh;
+}
+.aboutGrid{
+    min-height: 100vh;
+    height: max-content;
+    grid-template-areas:"e f f f f"
+    "e f f f f" 
+    "g g g g g"
+    "g g g g g"
+;
+}
+.aboutGrid .aboutHz{
+    grid-area: e;
+    
+    padding-inline: 0;
+}
+.aboutHz h1{
+    font-size: var(--p-text);
+}
+.aboutGridContent{
+    grid-area: g;
+    height: 50vh;
+    border-top: 1px solid var(--bg-5);
+}
+.aboutHz{
+    border-right: 1px solid var(--bg-5);
+}
+
+.abtGridP2{
+      width: 50%;
+      padding: .75rem;
+    
+}
+.abtGridP1{
+    width: 50%;
+}
+.abtGridP2 p{
+    font-size: .7rem;
+}
+
+.abtGridContH1{
+    font-size: 1rem;
+    
+    padding-block: 1.5rem;
+}
+.abtGridCont{
+    flex: 1;
+}
+.aboutImg2{
+    grid-area: f;
+    height: 50vh;
+}
+.racePrlx1{
+    width: calc(200vw + 6rem );
+}
+.racePrlx2{
+display: grid;
+padding: 1rem;
+gap: 0;
+grid-template-columns: .675fr .325fr;
+}
+.raceLinkImg{
+    height: 30vh;
+    width: calc(100% - 2rem);
+    margin-inline: auto;
+}
+.raceLinkImg img{
+width: 100%;
+}
 }

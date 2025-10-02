@@ -12,14 +12,7 @@
 </head>
 
 <body>
-    <div class="intro-animation">
-        <img src="img/tequilla.jpg" />
-        <img src="img/martini.jpg" />
-        <img src="img/nikkagin.jpg" />
-        <img src="img/gunpowder.jpg" />
-        <img src="img/timothe.jpg" />
-        <img src="img/gin.jpg" />
-    </div>
+  
     <div class="navigation">
         <div class="nav-title">
             <div class="top-line hLine"></div>
@@ -134,54 +127,73 @@
             <div class="totalSum num">300</div>
         </div>
     </div>
-    <section class="smoothScroll">
+    <section class="smoothScroll" data-scroll-container>
+  <div class="introAnim downwardAnim">
+        <div class="introImg">
+            <div class="img1 img  animImg"><img src="img/absvodka.jpg" alt=""></div>
+            <div class="img2 img animImg"><img src="img/lamprum.jpg" alt=""></div>
+            <div class="img3 img animImg"><img src="img/beachbeer.jpg" alt=""></div>
+            <div class="img4 img animImg"><img src="img/sea.jpg" alt=""></div>
+            <div class="img5 img animImg"><img src="img/martini.jpg" alt=""></div>
 
+            <div class="img flipImg"><img src="img/fruit wine.jpg" alt=""></div>
+        </div>
+        <div class="introText">
+            <h1 class="introH1">Welcome</h1>
+            <div class="introLine"></div>
+        </div>
+    </div>
         <div class="mask-body"></div>
+       <div class="top-section"></div>
+
+        <div class="hero-content" data-scroll>
+            <div class="heroContentImg">
+                <img src="img/yasin.jpg" alt="" />
+            </div>
+            <div class="heroContentP">
+                <h4 class="splits">Description</h4>
+                <p class="splits">A website animation featuring a background image moving on scroll in a
+                    parallax motion, made with Framer Motion and React, inside a Next.js app. Inspired by:
+                    https://inkfishnyc.com/. Pictures by Matthias Leidinger</p>
+            </div>
         </div>
-        <div class="top-section hero">
-            <img src="img/blender.jpg"/>
-                     <img src="img/blacklabel.jpg" />
-                      <img src="img/kura.jpg"/>
-<img src="img/blender.jpg"/>
-                     <img src="img/blacklabel.jpg" />
-                      <img src="img/kura.jpg"/>
-<img src="img/sea.jpg"/>
-        </div>
-        <section class="seeItemSection">
-            <h1>See Our Featured Products</h1>
+
+
+        <section class="seeItemSection" data-scroll>
+            <h1 class="splits">See Our Featured Products</h1>
             <div class="seeItemDiv">
                 <div class="seeItem">
                     <img src="img/goodtime.jpg" alt="">
                     <div class="seeItemCont">
-                        <p>Whiskey</p>
-                        <p class="num">$ 80</p>
+                        <p class="splits">Whiskey</p>
+                        <p class="num splits">$ 80</p>
                     </div>
                 </div>
-                 <div class="seeItem">
+                <div class="seeItem">
                     <img src="img/sea.jpg" alt="">
                     <div class="seeItemCont">
-                        <p>Drink Table</p>
-                        <p class="num">$ 369</p>
+                        <p class="splits">Drink Table</p>
+                        <p class="num splits">$ 369</p>
                     </div>
                 </div>
                 <div class="seeItem seeItem2">
                     <img src="img/track.jpg" alt="">
                     <div class="seeItemCont">
-                        <p>Cocktail</p>
-                        <p class="num">$ 50</p>
+                        <p class="splits">Cocktail</p>
+                        <p class="num splits">$ 50</p>
                     </div>
                 </div>
                 <div class="seeItem">
                     <img src="img/tree alcohol.jpg" alt="">
                     <div class="seeItemCont">
-                        <p>Wine Bundle</p>
-                        <p class="num">$ 77</p>
+                        <p class="splits">Wine Bundle</p>
+                        <p class="num splits">$ 77</p>
                     </div>
                 </div>
             </div>
-            <a href="product.html">Shop All</a>
+            <a href="product.html" class="splits">Shop All</a>
         </section>
-        <section class="prlxSection">
+        <section class="prlxSection" data-scroll>
             <img src="img/hang beer.jpg" alt="" class="prlxImg">
 
             <div class="prlxItem prlxDiv prlxItem1">
@@ -200,19 +212,19 @@
             </div>
 
         </section>
-        <section class="lookBook splitDiv">
+        <section class="lookBook splitDiv" data-scroll>
 
             <div class="lookbookMain">
                 <div class="lookHz hz">
-                    <p  class="splits">LookBook</p>
+                    <p class="splits">LookBook</p>
                 </div>
                 <div class="lookbookContent">
-                    <h1 class="splits" >LookBook</h1>
+                    <h1 class="splits">LookBook</h1>
                 </div>
             </div>
             <div class="productDisp">
                 <div class="prodDispHead">
-                    <p  class="splits">Items</p>
+                    <p class="splits">Items</p>
                     <p class=" prodHeadP2 splits">Description</p>
                 </div>
                 <div class="prodDispHover">
@@ -237,7 +249,7 @@
             </div>
         </section>
 
-        <section class="hScroll">
+        <section class="hScroll" data-scroll>
             <div class="parallaxRace">
                 <div class="raceDiv raceFlex">
                     <div class="raceH">
@@ -280,12 +292,12 @@
                         <h1 class="raceH1">ALCOHOL -</h1>
                         <div class="raceCircleCont">
                             <div class="raceCircleImg raceCircle">
-                            <img src="img/goodtime.jpg" alt=""/>
-                        </div>
-                        <div class="raceCircles">
-                            <p>thre will be somethin use should aobut that i dont know</p>
-                        </div>
-                         
+                                <img src="img/goodtime.jpg" alt="" />
+                            </div>
+                            <div class="raceCircles">
+                                <p>thre will be somethin use should aobut that i dont know</p>
+                            </div>
+
                         </div>
                     </div>
 
@@ -294,7 +306,7 @@
             </div>
         </section>
 
-        <div class="aboutRecycle">
+        <div class="aboutRecycle" data-scroll>
             <div class="abtRecycle aboutRecycle1">
                 <div class="abtCycleTop">
                     <div class="abtCycleCont abtCycleTop1">
@@ -317,13 +329,13 @@
                 <img src="img/goodtime.jpg" alt="">
             </div>
         </div>
-        <section class="prlxSection footerPrlx">
+        <section class="prlxSection footerPrlx" data-scroll>
             <img src="img/nature2.jpg" alt="" class="prlxImg">
             <div class="prlxDiv footerPrlxCont">
                 <h1 class="splits">BE PART OF OUR CLUB <br> FOR DISCOUNT</h1>
             </div>
         </section>
-        <footer class="footer splitDiv">
+        <footer class="footer splitDiv" data-scroll>
             <div class="footDiv">
                 <div class="foot foot1">
                     <div class="maskG">
@@ -335,48 +347,48 @@
                     <div class="upperFoot">
                         <div class="footLink footLink1">
 
-                            <div><a href="#" class="splitA">Home</a></div>
+                            <div><a href="#" class="splits">Home</a></div>
 
 
 
 
-                            <div><a href="#" class="splitA">About</a></div>
+                            <div><a href="#" class="splits">About</a></div>
 
 
 
-                            <div><a href="#" class="splitA">Product</a></div>
+                            <div><a href="#" class="splits">Product</a></div>
 
 
 
-                            <div><a href="#" class="splitA">Contact</a></div>
+                            <div><a href="#" class="splits">Contact</a></div>
 
 
                         </div>
                         <div class="footLink2 footLink">
 
-                            <div><a href="#" class="splitA">GMail</a></div>
+                            <div><a href="#" class="splits">GMail</a></div>
 
 
 
 
-                            <div><a href="#" class="splitA">GitHub</a></div>
+                            <div><a href="#" class="splits">GitHub</a></div>
 
 
 
-                            <div><a href="#" class="splitA">LinkedIn</a></div>
+                            <div><a href="#" class="splits">LinkedIn</a></div>
 
 
 
-                            <div><a href="#" class="splitA">Phone</a></div>
+                            <div><a href="#" class="splits">Phone</a></div>
 
 
                         </div>
                     </div>
-                    <div class="downFoot splitA">ALCOHOL SINCE 1935</div>
+                    <div class="downFoot splits">ALCOHOL SINCE 1935</div>
                 </div>
 
             </div>
-            <div class="bottomFooter splitA">ALCHOL SINCE 199109</div>
+            <div class="bottomFooter splits">ALCHOL SINCE 199109</div>
         </footer>
 
     </section>
@@ -388,10 +400,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
     integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/Flip.min.js"
+    integrity="sha512-BQAAkzDHfly7jPwVhh0SpGxbvjRNEapCNkJ0VNSMFervZLsaeUch4P92skLoD70NXWlI1GOgrXRfR50b/quSSg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"
     integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
+
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 
 <script src="nav.js"></script>
@@ -399,5 +414,6 @@
 <script src="footer.js"></script>
 <script src="index.js"></script>
 <script src="horizontal.js"></script>
+<script src="Flip.js"></script>
 
 </html>

@@ -1,5 +1,15 @@
 gsap.registerPlugin(ScrollTrigger)
-document.addEventListener("DOMContentLoaded", () => {
+
+
+
+ 
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+  
+
+
 
 const navToggle = document.querySelector(".menu")
 
@@ -26,12 +36,7 @@ duration:1,
 stagger:{
 each:0.085
 }
-},"-=1.2").to(".smoothScroll",{
-y:"30vh",
-duration:1.35,
-ease:"expo.inOut"
-
-},0).to(".mask-body",{
+},"-=1.2").to(".mask-body",{
 display:"block"
 },0).to(".mask-body",{
 opacity:.9,
@@ -114,5 +119,10 @@ duration:.75,
 
 
 navToggle.addEventListener("click",switchMenu)
+
+
 })
 
+
+
+ 

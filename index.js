@@ -3,17 +3,14 @@
 
 
 
-gsap.registerPlugin(ScrollTrigger, SplitText)
+gsap.registerPlugin(ScrollTrigger,SplitText)
 document.addEventListener("DOMContentLoaded", () => {
 
-
-
-  let motiveScroll = document.querySelector('.smoothScroll')
+let motiveScroll = document.querySelector(".smoothScroll")
   const locoScroll = new LocomotiveScroll({
     el: motiveScroll,
-    lerp:0.5,
-    multiplier:1,
-    gestureDirection: "both",
+lerp:0.5,
+multiplier:1,
     smartphone: {
       smooth: true
     }
@@ -38,38 +35,45 @@ document.addEventListener("DOMContentLoaded", () => {
     ,
 
 
-  /*   pinType: motiveScroll.style.transform ? "transform": "fixed" */
-    
+    /*pinType: motiveScroll.style.transform ? "transform": "fixed"*/ 
+
   })
+ 
+
+
+
+ 
+
   
-  const animTl = gsap.timeline()
+  /* gsap.to(".intro-animation img", {
+     clipPath: "polygon(0% 100%,100% 100%, 100% 0%,0% 0%)",
+     duration: 1.5,
+     ease: "power4.inOut",
+     stagger: {
+       amount: 1.5
+     },
+   })
+   animTl.to(".intro-animation", {
+     clipPath: "polygon(0% 0%,100% 0%, 100% 0%,0% 0%)",
+     duration: 2,
+     delay: 2,
+ 
+     ease: "power4.inOut"
+   }).to(".mask-img", {
+     scaleY: 0,
+     ease: "power1.inOut",
+     duration: .7,
+     delay: .5,
+ 
+     transformOrigin: "bottom"
+ 
+   }
+ 
+   )
+ */
 
-  gsap.to(".intro-animation img", {
-    clipPath: "polygon(0% 100%,100% 100%, 100% 0%,0% 0%)",
-    duration: 1.5,
-    ease: "power4.inOut",
-    stagger: {
-      amount: 1.5
-    },
-  })
-  animTl.to(".intro-animation", {
-    clipPath: "polygon(0% 0%,100% 0%, 100% 0%,0% 0%)",
-    duration: 2,
-    delay: 2,
 
-    ease: "power4.inOut"
-  }).to(".mask-img", {
-    scaleY: 0,
-    ease: "power1.inOut",
-    duration: .7,
-    delay: .5,
-
-    transformOrigin: "bottom"
-
-  }
-
-  )
-
+   
   gsap.fromTo(
     ".card-trans1", {
     y: "0%",
@@ -94,20 +98,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-  gsap.to(".img", {
-    y: -150,
-    ease: "none",
+  const heroImg = document.querySelectorAll(".hero img")
+  const heroImgTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".top-section",
-      start: "top bottom",
+      start: "top top",
       end: "bottom top",
       scrub: true,
-      scroller:motiveScroll
+     
+      ease: "none",
     }
 
-  }
+  })
+  heroImg.forEach(imge => {
+    heroImgTl.to(imge, {
+      y: gsap.utils.random(-200, -400),
+      ease: "none"
 
-  )
+    }, 0)
+  })
+
+
+
 
   let spil;
   const targets = gsap.utils.toArray(".splits")
@@ -129,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: {
         trigger: tar,
         start: "top bottom",
-        scroller:motiveScroll
+       
       }
 
     })
@@ -144,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: {
         trigger: e,
         start: "top 35%",
-        scroller:motiveScroll
+       
       }
     })
     const newMask = e.querySelector(".newMask")
@@ -164,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // parallax section //
- const prlxSection = document.querySelectorAll(".prlxSection")
+  const prlxSection = document.querySelectorAll(".prlxSection")
 
   prlxSection.forEach(e => {
     const prlxImg = e.querySelector(".prlxImg")
@@ -174,18 +186,18 @@ document.addEventListener("DOMContentLoaded", () => {
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-        scroller:motiveScroll
+
       }
     })
     const yHeight = prlxImg.offsetHeight - e.offsetHeight
-const prlxDiv = e.querySelectorAll(".prlxDiv")
+    const prlxDiv = e.querySelectorAll(".prlxDiv")
     prlxTl.fromTo(prlxImg, { y: -yHeight }, {
       y: 0,
       ease: "none"
-    }).to(prlxDiv,{
-  y:-100,
-   ease:"none"
-},0)
+    }).to(prlxDiv, {
+      y: -100,
+      ease: "none"
+    }, 0)
   })
 
 
@@ -216,10 +228,11 @@ const prlxDiv = e.querySelectorAll(".prlxDiv")
   })
 
 
-  
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-  ScrollTrigger.refresh(); 
-  
+ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+  ScrollTrigger.defaults({scroller:motiveScroll})
+  ScrollTrigger.refresh();
+ 
+
 })
 
