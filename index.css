@@ -678,7 +678,7 @@ padding-top: 1rem;
 .hero-content p{
   font-size: 1.4rem;
   line-height: 1.4;
-  font-weight: bold;;
+  font-weight: bold;
   color:black;
    width: 85%;
     
@@ -1625,5 +1625,17 @@ padding:.5rem;
 
 .hero-content{
 flex-direction: column;
+height:100%;
+}
+
+.heroContentImg{
+height:50vh}
+.hero-content p{
+  font-size: 1.15rem;
+  line-height: 1.4;
+  font-weight: bold;;
+  color:black;
+   width: 85%;
+
 }
 }
