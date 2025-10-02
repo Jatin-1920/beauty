@@ -1625,11 +1625,11 @@ padding:.5rem;
 
 .hero-content{
 flex-direction: column;
-height:100%;
+min-height:100vh;
 }
 
 .heroContentImg{
-height:50vh}
+height:50vh;}
 .hero-content p{
   font-size: 1.15rem;
   line-height: 1.4;
