@@ -1622,4 +1622,8 @@ padding:.5rem;
 .seeItemCont{
   font-size:.8rem;
 }
+
+.hero-content{
+flex-direction: column;
+}
 }
