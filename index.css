@@ -1542,7 +1542,9 @@ flex: 1;
 .prlxCont p{
   font-size: .8rem;
 }
-
+.prlxItem{
+  padding: .25rem;
+}
   .lookBook{
     flex-direction: column;
   }
