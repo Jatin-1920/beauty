@@ -1539,7 +1539,9 @@ flex: 1;
   .dLine1 {
     display: none;
   }
-
+.prlxCont p{
+  font-size: .8rem;
+}
 
   .lookBook{
     flex-direction: column;
