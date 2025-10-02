@@ -1607,7 +1607,8 @@ font-size: 30vw;
     grid-template-columns: repeat(2,1fr);
   }
   .seeItem{
-    height: 33vh;
+    height: 37vh;
+padding:.5rem;
     border-bottom: 1px solid var(--bg-5);
   }
   .seeItemSection a{
