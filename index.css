@@ -1632,10 +1632,9 @@ min-height:100vh;
 height:50vh;}
 .hero-content p{
   font-size: 1.15rem;
-  line-height: 1.4;
-  font-weight: bold;;
+  
   color:black;
-   width: 85%;
+   width:100%;
 
 }
 }
