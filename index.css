@@ -1087,7 +1087,7 @@ justify-content: space-between;
 
 .seeItemDiv{
   display: flex;
-  height:55vh;
+  height:100%;
   align-items: center;
   
 }
@@ -1600,5 +1600,18 @@ font-size: 30vw;
     width: 38vw;
     height: 30vh;
     padding: .25rem;
+  }
+  
+  .seeItemDiv{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .seeItem{
+    height: 50vh;
+    border-bottom: 1px solid var(--bg-5);
+  }
+  .seeItemSection a{
+    border-bottom: 1px solid var(--bg-5);
+    border-top: none;
   }
 }
