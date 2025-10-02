@@ -1615,5 +1615,8 @@ padding:.5rem;
     border-bottom: 1px solid var(--bg-5);
     border-top: none;
   }
-
+.footerPrlx{
+  
+  height:90dvh;
+}
 }
