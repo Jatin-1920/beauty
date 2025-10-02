@@ -1583,6 +1583,8 @@ flex: 1;
   }
   .raceImg{
     width: 65vw;
+    height: 50vh;
+    margin-block: auto;
   }
   .raceH1{
 font-size: 30vw;
