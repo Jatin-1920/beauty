@@ -1,0 +1,78 @@
+:root{
+    --pine: #507377;
+    --earth: #93583b;
+}
+
+.journalPrlx{
+    margin: 0;
+}
+
+.smallPrlx{
+    height: 75vh;
+    width: 40vw;
+    position: absolute;
+    left: -10vw;
+    top: -5vh;
+}
+
+.jrnlPrlx{
+    display: flex;
+    height: 80dvh;
+    width: 100%;
+    padding-inline: 1rem;
+    background: var(--pine);
+    margin: 0;
+}
+.jrnlPrlx>*{
+    flex: 1;
+}
+.jrnlPrlx .prlxSection{
+    height: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: auto;
+}
+
+.jrnlPrlx2{
+    display: grid;
+    background: var(--earth);
+    grid-template-columns: repeat(2,1fr);
+}
+
+.jrnlPrlx2 .prlxSection{
+height: 40vh;
+width:30vw;
+margin-block: auto;
+}
+.jrnlPrlxCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jrnlPrlxCont p{
+    max-width: 25rem;
+font-size: var(--p-text);
+color: white;
+}
+
+.jrnlPDiv{
+    position: absolute;
+right: 2rem;
+    top: 25vh;
+   
+    
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 30%;
+}
+.jrnlH1 h1{
+ font-size: var(--h1-text);
+ line-height: 1;
+
+}
+.jrnlH1 p{
+    font-size: .8rem;
+    text-transform: uppercase;
+}
