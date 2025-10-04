@@ -379,4 +379,9 @@ grid-template-columns: .675fr .325fr;
 .raceLinkImg img{
 width: 100%;
 }
+
+.raceContP{
+    font-size: 1.15rem;
+    
+}
 }

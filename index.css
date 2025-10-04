@@ -678,7 +678,7 @@ padding-top: 1rem;
 .hero-content p{
   font-size: 1.4rem;
   line-height: 1.4;
-  font-weight: bold;;
+  font-weight: bold;
   color:black;
    width: 85%;
     
@@ -1485,7 +1485,7 @@ flex: 1;
 .footerPrlx{
   width: 90vw;
   margin-inline: auto;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .prlxMask{
@@ -1607,11 +1607,34 @@ font-size: 30vw;
     grid-template-columns: repeat(2,1fr);
   }
   .seeItem{
-    height: 50vh;
+    height: 37vh;
+padding:.5rem;
     border-bottom: 1px solid var(--bg-5);
   }
   .seeItemSection a{
     border-bottom: 1px solid var(--bg-5);
     border-top: none;
   }
+.footerPrlx{
+  
+  height:90dvh;
+}
+.seeItemCont{
+  font-size:.8rem;
+}
+
+.hero-content{
+flex-direction: column;
+min-height:100vh;
+}
+
+.heroContentImg{
+height:50vh;}
+.hero-content p{
+  font-size: 1.15rem;
+  
+  color:black;
+   width:100%;
+
+}
 }
