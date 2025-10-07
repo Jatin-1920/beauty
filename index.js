@@ -39,7 +39,29 @@ multiplier:1,
 
   })
  
+const lenis = new Lenis({ 
+    direction: 'both',
+    gestureDirection: 'both',
+    lerp: 0.07,
+    smooth: true,
+    smoothTouch: true,
+    smoothWheel: true,
+    touchMultiplier: 0.7,
+    wheelMultiplier: 0.7,
+    infinite: false,
+    autoResize: true,
+    normalizeWheel:true
+  });
 
+
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 1000)
+})
+
+gsap.ticker.lagSmoothing(0) 
 
 
  
