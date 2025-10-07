@@ -6,7 +6,7 @@
 gsap.registerPlugin(ScrollTrigger,SplitText)
 document.addEventListener("DOMContentLoaded", () => {
 
-let motiveScroll = document.querySelector(".smoothScroll")
+/* let motiveScroll = document.querySelector(".smoothScroll")
   const locoScroll = new LocomotiveScroll({
     el: motiveScroll,
 lerp:0.5,
@@ -35,10 +35,10 @@ multiplier:1,
     ,
 
 
-    /*pinType: motiveScroll.style.transform ? "transform": "fixed"*/ 
+    /*pinType: motiveScroll.style.transform ? "transform": "fixed
 
   })
- 
+ */
 const lenis = new Lenis({ 
     direction: 'both',
     gestureDirection: 'both',
@@ -251,10 +251,10 @@ gsap.ticker.lagSmoothing(0)
 
 
 
- ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+/* ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
   ScrollTrigger.defaults({scroller:motiveScroll})
   ScrollTrigger.refresh();
- 
+ */
 
 })
 
