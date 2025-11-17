@@ -76,3 +76,10 @@ right: 2rem;
     font-size: .8rem;
     text-transform: uppercase;
 }
+
+@media (max-width:750px) {
+
+.jrnlPrlx{
+flex-direction:column;
+}
+}
