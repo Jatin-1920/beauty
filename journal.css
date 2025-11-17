@@ -82,4 +82,9 @@ right: 2rem;
 .jrnlPrlx{
 flex-direction:column;
 }
+
+.jrnlPrlxCont p{
+    
+font-size:.9rem;
+}
 }
