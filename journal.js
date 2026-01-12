@@ -8,8 +8,8 @@ const vignetteAnim =[
 const html = vignetteAnim.map(x=>
 `
 <div class="galleries">
-<div class="galleriesItem">
-<img src="${x.img}">
+<div class="galleriesItem prlxSection">
+<img src="${x.img}" class="prlxImg">
 </div>
 <div class="vigContent">
 <p>${x.para}</p>
