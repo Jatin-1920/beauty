@@ -34,3 +34,22 @@
     height:100%;
     position: absolute;
 }
+
+.vigContent{
+    max-width:35rem;
+    position: absolute;
+    right:15vh;
+    top:50%;
+    color:white;
+    background:rgba(0,0,0,0.15);
+    border-radius:1rem;
+    padding:2rem;
+    transform:translateY(-50%);
+}
+.vigP{
+    font-size:var(--h2-text);
+   color:red;
+    font-weight:bold;
+    position:relative;
+    z-index:5;
+}
