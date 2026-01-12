@@ -21,3 +21,8 @@ const html = vignetteAnim.map(x=>
 </div>
   `
 ).join('')
+
+
+const mainGallery =  document.querySelector(".mainGallery")
+
+mainGallery.innerHTML = html
