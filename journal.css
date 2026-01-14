@@ -13,12 +13,13 @@ margin:0;
 .vignette{
 position:fixed;
 height:40vh;
-width:70vw;
-transform: translate(50%,50%);
 display:grid;
 grid-template-columns: repeat(2,1fr);
-overflow:clip;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 
+z-index:6;
 }
 .vignette img{
 height:100%;
