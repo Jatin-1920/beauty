@@ -9,3 +9,25 @@ gap:0;
 margin:0;
     clip-path:polygon(0 0, 100% 0, 100% 100%,0 100%);
 }
+
+.vignette{
+position:fixed;
+height:40vh;
+width:70vw;
+transform; translate(50%,50%);
+display:grid;
+grid-template-columns: repeat(2,1fr);
+overflow:clip;
+
+}
+.vignette img{
+height:100%;
+width:100%;
+aspect-ratio:3/4;
+}
+.vignetteP{
+Background:white;
+color:black;
+text-align:center;
+font-size:var(--p1-text);
+}
