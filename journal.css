@@ -29,6 +29,7 @@ aspect-ratio:3/4;
 .vignetteP{
 Background:white;
 color:black;
-text-align:center;
-font-size:var(--p1-text);
+display:grid;
+place-item:center;
+font-size:var(--p-text);
 }
