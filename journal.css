@@ -30,6 +30,7 @@ aspect-ratio:3/4;
 Background:white;
 color:black;
 display:grid;
+height:100%;
 place-item:center;
 font-size:var(--p-text);
 }
